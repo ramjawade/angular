@@ -28,21 +28,22 @@ export class AppComponent {
       link : "temp",
       icon : "home"
     },{
-      name :"Favorite",
-      link : "def",
-      icon : "favorite_border"
-    },{
-      name :"Authentication",
-      link : "def",
-      icon : "fingerprint"
-    },{
-      name :"Shut Down",
-      link : "def",
-      icon : "power_settings_new"
-    },{
-      name :"Contact",
-      link : "def",
-      icon : "call"
+      name :"Map",
+      link : "map",
+      icon : "layers"
     }
+    // ,{
+    //   name :"Authentication",
+    //   link : "def",
+    //   icon : "fingerprint"
+    // },{
+    //   name :"Shut Down",
+    //   link : "def",
+    //   icon : "power_settings_new"
+    // },{
+    //   name :"Contact",
+    //   link : "def",
+    //   icon : "call"
+    // }
   ];
 }
