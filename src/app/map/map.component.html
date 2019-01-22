@@ -1,3 +1,10 @@
-<p>
-  map works!
-</p>
+<div leaflet style="height:100%;" 
+(leafletMapReady)="onMapReady($event)"
+[leafletBaseLayers]="baseLayers"
+[leafletCenter]="center"
+[leafletFitBounds]="fitBounds">
+</div>
+<!-- <div style="height: 300px;"
+     leaflet 
+     [leafletOptions]="options">
+</div> -->
