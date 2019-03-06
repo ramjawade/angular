@@ -1,0 +1,42 @@
+.parent-temp {
+    background-color: darkgray;
+    height: 100%;
+    padding: 10px;
+}
+
+.example-container {
+    width: inherit;
+    height: inherit;
+  }
+
+.example-container mat-drawer {
+    background-color: #f2f1f1;
+    width: 280px;
+}
+
+.filter-padding {
+    padding: 20px;
+}
+.mat-expansion-panel {
+    background-color: inherit;
+}
+
+.mat-expansion-panel-spacing {
+    margin: unset;
+}
+
+.mat-expansion-panel:not([class*=mat-elevation-z]) {
+    box-shadow: 0 0px 0px 0px rgba(0,0,0,0), 0 0px 0px 0 rgba(0,0,0,0), 0 1px 0px 0 rgba(0,0,0,.1);
+}
+
+
+.mat-list, .mat-nav-list, .mat-selection-list {
+    padding-top: 0px;
+}
+.mat-list .mat-list-item {
+    height: 35px;
+}
+
+.mat-list .mat-list-item {
+    font-size: 15px;
+}

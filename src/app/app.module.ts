@@ -28,5 +28,4 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
   bootstrap: [AppComponent]
 })
 export class AppModule { 
-  window.map= {};
 }

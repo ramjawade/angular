@@ -15,7 +15,6 @@ export class MapComponent implements OnInit {
   
   onMapReady(map: Map) {
     map.setZoom(4);
-    window.map = map;
   }
   constructor() {  
     // var sampleMap = L.map('mapid').setView([0, 0], 13);

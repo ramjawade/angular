@@ -1,7 +1,38 @@
-<div style="text-align:center">
-  <h1>
-    Welcome to Temp!
-  </h1>
+<div class="parent-temp">
+    <mat-drawer-container class="example-container">
+      <mat-drawer mode="side" opened>
+        <div class="filter-padding">Filters</div>
+        <mat-divider></mat-divider>
+        <mat-accordion>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Shirts
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-list role="list">
+                <mat-list-item role="listitem">All Shirts</mat-list-item>
+                <mat-list-item role="listitem">Fromal Shirts</mat-list-item>
+                <mat-list-item role="listitem">Party Wear</mat-list-item>
+              </mat-list>
+                
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Mobiles & Accessories
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-list role="list">
+                  <mat-list-item role="listitem">All </mat-list-item>
+                  <mat-list-item role="listitem">Moboies</mat-list-item>
+                  <mat-list-item role="listitem">Tablets</mat-list-item>
+                  <mat-list-item role="listitem">Mobile Accessories</mat-list-item>
+                </mat-list>
+              </mat-expansion-panel>
+        </mat-accordion>
+          
+      </mat-drawer>
+      <mat-drawer-content>Main content</mat-drawer-content>
+    </mat-drawer-container>
 </div>
-
-
