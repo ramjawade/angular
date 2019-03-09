@@ -6,11 +6,13 @@ import { MaterialModuleModule } from './material-module/material-module.module';
 import { TempComponent } from './temp/temp.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MapComponent} from './map/map.component';
+import { ListingUserComponent } from './user-management/listing-user/listing-user.component'
 
 const routes: Routes = [
   { path: 'temp', component: TempComponent },
   { path:'dashboard',component: DashboardComponent},
-  {path:'map',component:MapComponent}
+  { path:'map',component:MapComponent},
+  { path : "userMgt", component : ListingUserComponent}
 ];
 
 @NgModule({

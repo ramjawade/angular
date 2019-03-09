@@ -1,0 +1,95 @@
+<div class="parent-temp" fxLayout="column" fxflex>
+  <mat-drawer-container class="example-container" fxLayout="row">
+    <mat-drawer mode="side" opened fxFlex="27%" >
+      <div class="gird-padding" >
+          <!-- <mat-card fxFlex>
+              <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+          </mat-card>  -->
+        <mat-grid-list cols="1" rowHeight="1:1">
+              <mat-grid-tile fxFlex>
+                  <img  mat-card-image src="./../../../assets/images.png" alt="Photo of a Shiba Inu">
+              </mat-grid-tile>
+          </mat-grid-list>
+      </div>
+      <div class= "gird-padding"  fxLayout="row wrap" fxLayoutAlign="space-around">
+          <div fxLayout="column" fxLayout.lg="row" fxFlex.lg="100%" fxLayoutAlign="space-around" class="gird-padding">
+            <div class="lable-name" fxFlex.lg="50%"> Role </div>
+            <div fxFlex.lg="50%"> NHQ Viewer  derrfrrrrrr</div>
+          </div>
+
+          <div fxLayout="column" fxLayout.lg="row" fxFlex.lg="100%" fxLayoutAlign="space-around" class="gird-padding">
+            <div class="lable-name" fxFlex.lg="50%"> Team </div>
+            <div fxFlex.lg="50%"> Akshay's Team</div>
+          </div>
+
+          <div fxLayout="column" fxLayout.lg="row" fxFlex.lg="100%" fxLayoutAlign="space-around" class="gird-padding">
+              <div  class="lable-name" fxFlex.lg="50%"> Workpace </div>
+              <div fxFlex.lg="50%">India</div>
+          </div>
+      </div>
+    </mat-drawer>
+    <mat-drawer-content fxFlex="73%">
+        <mat-tab-group dynamicHeight="true" >
+            <mat-tab label="Accont Info" fxflex > 
+                <mat-card class="mat-card-container">
+                    <mat-card-header>
+                        <mat-card-title>Personal Information</mat-card-title>
+                      </mat-card-header>
+                      <mat-divider></mat-divider>
+                      <mat-card-content>
+                          <form fxLayout="row wrap" fxLayoutAlign="space-between start">
+                              <mat-form-field fxLayout="column" fxFlex.lg="33%" >
+                                <input matInput placeholder="First Name" value="Dhondiram">
+                              </mat-form-field>
+                              <mat-form-field fxLayout="column" fxFlex.lg="33%" >
+                                  <input matInput placeholder="Middle Name" value="Nivrati">
+                              </mat-form-field>
+                              <mat-form-field fxLayout="column" fxFlex.lg="33%" >
+                                  <input matInput placeholder="Last Name" value="Jawade">
+                              </mat-form-field>
+                              <mat-form-field  fxLayout="column" fxFlex.lg="33%" >
+                                  <input matInput placeholder="Orgnaization" value="Innoeye Technology">
+                                </mat-form-field>
+                                <mat-form-field fxLayout="column" fxFlex.lg="33%" >
+                                    <input matInput placeholder="Phone Number" value="8668359297">
+                                </mat-form-field>
+                                <mat-form-field fxLayout="column" fxFlex.lg="33%" >
+                                    <input matInput placeholder="Address" value="At post Makhani">
+                                </mat-form-field>
+                            </form>
+                      </mat-card-content>
+                </mat-card>
+                <mat-card class="mat-card-container">
+                    <mat-card-header>
+                        <mat-card-title>Skill Set Information</mat-card-title>
+                      </mat-card-header>
+                      <mat-divider></mat-divider>
+                      <mat-card-content>
+                          <form fxLayout="row wrap" fxLayoutAlign="space-between start">
+                              <mat-form-field fxLayout="column" fxFlex.lg="33%" >
+                                <input matInput placeholder="First Name" value="Dhondiram">
+                              </mat-form-field>
+                              <mat-form-field fxLayout="column" fxFlex.lg="33%" >
+                                  <input matInput placeholder="Middle Name" value="Nivrati">
+                              </mat-form-field>
+                              <mat-form-field fxLayout="column" fxFlex.lg="33%" >
+                                  <input matInput placeholder="Last Name" value="Jawade">
+                              </mat-form-field>
+                              <mat-form-field  fxLayout="column" fxFlex.lg="33%" >
+                                  <input matInput placeholder="Orgnaization" value="Innoeye Technology">
+                                </mat-form-field>
+                                <mat-form-field fxLayout="column" fxFlex.lg="33%" >
+                                    <input matInput placeholder="Phone Number" value="8668359297">
+                                </mat-form-field>
+                                <mat-form-field fxLayout="column" fxFlex.lg="33%" >
+                                    <input matInput placeholder="Address" value="At post Makhani">
+                                </mat-form-field>
+                            </form>
+                      </mat-card-content>
+                </mat-card>
+            </mat-tab>
+            <mat-tab label="Addition Info"> Content 2 </mat-tab>
+          </mat-tab-group>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</div>

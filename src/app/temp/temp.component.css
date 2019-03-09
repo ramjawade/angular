@@ -1,7 +1,5 @@
 .parent-temp {
-    background-color: darkgray;
     height: 100%;
-    padding: 10px;
 }
 
 .example-container {
@@ -35,8 +33,19 @@
 }
 .mat-list .mat-list-item {
     height: 35px;
+    border-bottom: 1px solid;
+    border-color: #dad8d8;
 }
 
 .mat-list .mat-list-item {
     font-size: 15px;
+    border-left: 6px solid red;
+    /* background-color: lightgrey; */
 }
+
+
+/* mat-list-item left-color
+.left-color {
+    border-left: 6px solid red;
+    background-color: lightgrey;
+  } */

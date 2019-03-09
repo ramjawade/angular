@@ -32,11 +32,12 @@ export class AppComponent {
       link : "map",
       icon : "layers"
     }
+    ,{
+      name :"User Management",
+      link : "userMgt",
+      icon : "account_circle"
+    }
     // ,{
-    //   name :"Authentication",
-    //   link : "def",
-    //   icon : "fingerprint"
-    // },{
     //   name :"Shut Down",
     //   link : "def",
     //   icon : "power_settings_new"

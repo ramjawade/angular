@@ -5,11 +5,13 @@
   }
 
   .example-container {
+    background-color: #e8f6fe;
     position: absolute;
     top: 60px;
     bottom: 60px;
     left: 0;
     right: 0;
+    padding: 10px;
   }
   
   .example-sidenav {

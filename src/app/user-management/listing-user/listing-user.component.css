@@ -1,0 +1,67 @@
+.parent-temp {
+    height: 100%;
+}
+
+.example-container {
+    width: inherit;
+    height: inherit;
+}
+
+.example-container mat-drawer {
+    background-color: #f2f1f1;
+}
+
+.mat-drawer-container  { 
+    border: 1px solid;
+    border-color: #b4b5b4;
+ }
+ 
+ .mat-drawer {
+   border-color: #b4b5b4 !important;
+   border-right: 1px solid;
+ }
+ 
+ .gird-padding {
+     padding: 10px;
+ }
+
+ .mat-grid-tile {
+    border: 1px solid;
+    border-color: #dddddd;
+}
+
+/* scrollbar */
+
+ ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #b4b5b4; 
+  } 
+  /* scrollbar */
+  
+  .lable-name {
+    color: #9a9b9e;
+  }
+
+.mat-card {
+  border: 1px solid !important;
+  border-color: #e1e1e1 !important;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.mat-card-content {
+  padding-top : 15px;
+}
+
+.mat-card-title {
+  font-weight: 500;
+}
+
+::ng-deep .mat-tab-body-wrapper {
+  height: 100%;
+  padding: 10px;
+}
+
