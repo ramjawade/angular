@@ -1,3 +1,30 @@
-<p>
-  create-user works!
-</p>
+<mat-card class="mat-card-container">
+  <mat-card-header>
+      <mat-card-title> New User Information</mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+        <form fxLayout="row wrap" fxLayoutAlign="space-between start">
+          <mat-form-field fxLayout="column" fxFlex.lg="33%" >
+            <input matInput placeholder="Id"    [(ngModel)]="user.id" [ngModelOptions]="{standalone:
+              true}" >
+          </mat-form-field>  
+          <mat-form-field fxLayout="column" fxFlex.lg="33%" >
+              <input matInput placeholder="User Name"    [(ngModel)]="user.userName" [ngModelOptions]="{standalone:
+                true}" >
+            </mat-form-field>
+            <mat-form-field fxLayout="column" fxFlex.lg="33%" >
+                <input matInput placeholder="Email" [(ngModel)]="user.email" [ngModelOptions]="{standalone:
+                  true}" >
+            </mat-form-field>
+            <mat-form-field fxLayout="column" fxFlex.lg="33%" >
+                <input matInput placeholder="Description" [(ngModel)]="user.description" [ngModelOptions]="{standalone:
+                  true}">
+            </mat-form-field>
+          </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <span fxFlex></span>
+      <button mat-button color="primary" (click)="createUser()">CREATE USER</button>
+    </mat-card-actions>
+</mat-card>

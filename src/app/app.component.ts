@@ -36,6 +36,11 @@ export class AppComponent {
       name :"User Management",
       link : "userMgt",
       icon : "account_circle"
+    },
+    {
+      name :"Create User",
+      link : "createUser",
+      icon : "account_circle"
     }
     // ,{
     //   name :"Shut Down",
