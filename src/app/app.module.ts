@@ -12,11 +12,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { MapComponent } from './map/map.component';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { AgGridModule} from 'ag-grid-angular';
+import { FourZeroFourComponent } from './four-zero-four/four-zero-four.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MapComponent
+    MapComponent,
+    FourZeroFourComponent
   ],
   imports: [
     AgGridModule,
