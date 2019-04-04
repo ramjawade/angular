@@ -1,0 +1,45 @@
+mat-grid-tile {
+    background: lightblue;
+}
+
+.mat-card-container .mat-card-title {
+    color: red;
+}
+.mat-card-container mat-card-content {
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.project-name-class {
+    margin: 10px;
+    background: inherit;
+    box-shadow: none !important;
+    
+}
+.project-name-class mat-card-content {
+    font-size: large;
+}
+.login-button {
+    margin: 0px;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+.main-page {
+    background: #5e91f8;
+    height: 100%;
+}
+.forget-password {
+    padding: 20px;
+}
+.forget-password a {
+    padding-right: 10px;
+}
+.domain-name {
+    font-size: 50px;
+    font-family: cursive;
+    font-style: italic;
+    color: red;
+}

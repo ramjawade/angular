@@ -7,6 +7,7 @@ import { FlexModule} from '@angular/flex-layout';
 import { HttpClientModule }    from '@angular/common/http'
 
 import { AppComponent } from './app.component';
+import { AuthModule} from  './auth/auth.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { MapComponent } from './map/map.component';
@@ -28,6 +29,7 @@ import { FourZeroFourComponent } from './four-zero-four/four-zero-four.component
     FormsModule,
     FlexModule,
     ReactiveFormsModule,
+    AuthModule,
     AppRoutingModule,
     HttpClientModule,
     UserManagementModule,

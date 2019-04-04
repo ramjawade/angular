@@ -13,8 +13,7 @@ import { FourZeroFourComponent } from './four-zero-four/four-zero-four.component
 const routes: Routes = [
   {
     path : "",
-    redirectTo : "/temp",
-    pathMatch : "full"
+    loadChildren : "./auth/auth.module#AuthModule" 
   },
   { path: 'temp', component: TempComponent },
   { path:'dashboard',component: DashboardComponent},

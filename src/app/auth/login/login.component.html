@@ -1,0 +1,34 @@
+<div fxLayout="column" fxLayoutAlign="center center" class="main-page">
+  <mat-card class="project-name-class">
+      <mat-card-content> 
+        Welcome to <br>
+        <span class="domain-name ">my.com</span>
+      </mat-card-content>
+  </mat-card>
+  <mat-card fxFlex class="mat-card-container"> 
+    <mat-card-header>
+      <mat-card-title *ngIf="isValid">Authentication Fail</mat-card-title>
+    </mat-card-header>
+      <mat-card-content>
+          <form fxLayout="column"  fxLayoutAlign="center center">
+            <mat-form-field>
+              <input matInput  placeholder="User Name" required [(ngModel)]="userName" [ngModelOptions]="{standalone:
+                true}" >
+            </mat-form-field>  
+            <mat-form-field >
+                <input matInput placeholder="Password"  required [(ngModel)]="password" [ngModelOptions]="{standalone:
+                  true}" >
+              </mat-form-field>
+            </form>
+      </mat-card-content>
+      <mat-card-actions class="login-button">
+        <button mat-button color="primary" (click)="goToApplication()" disabled></button>
+        <button fxFlex mat-button color="primary" (click)="goToApplication()">LOG IN</button>
+        <button mat-button color="primary" (click)="goToApplication()" disabled></button>
+      </mat-card-actions> 
+  </mat-card>
+  <div fxFlex  class="forget-password"> 
+    <a href="">Forget Password</a>
+    <a href="">Sign Up</a>
+  </div>
+</div>
