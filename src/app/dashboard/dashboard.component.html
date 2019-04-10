@@ -1,10 +1,59 @@
-<div class="main-dashboard">
-    <mat-grid-list cols="2" rowHeight="4:1">
-        <mat-grid-tile>1</mat-grid-tile>
-        <mat-grid-tile>2</mat-grid-tile>
-        <mat-grid-tile>3</mat-grid-tile>
-        <mat-grid-tile>4</mat-grid-tile>
-        <mat-grid-tile>4</mat-grid-tile>
-      </mat-grid-list>
+<div class="parent" fxLayout.lg="row wrap" fxLayout="column" fxLayoutGap.xs="10px"  fxLayoutAlign="space-between none">
+  <mat-card fxFlex.lg="49.5%" class="mat-card-container" *ngFor="let x of [1,3,4,5]">
+    <mat-card-header>
+      <mat-card-title>OVERVIEW</mat-card-title>
+    </mat-card-header>
+      <mat-card-content>
+        <mat-list fxLayout="column wrap">
+          <mat-list-item  > 
+            <i fxFlex="10%" class="material-icons md-24 md-dark">layers</i>
+            <span>Income</span>
+            <span fxFlex></span>
+            31000
+          </mat-list-item>
+          <mat-list-item  > 
+              <i fxFlex="10%" class="material-icons md-24 md-dark">layers</i>
+              <span>Expenses</span>
+              <span fxFlex></span>
+              31000
+            </mat-list-item>
+            <mat-list-item > 
+                <i fxFlex="10%" class="material-icons md-24 md-dark">layers</i>
+                <span>Credit cards</span>
+                <span fxFlex></span>
+                31000
+              </mat-list-item>
+         </mat-list>
+      </mat-card-content>
+  </mat-card>
+  <!-- <mat-card fxFlex.lg="49.5%" class="mat-card-container">
+      <mat-card-header>
+        <mat-card-title>OVERVIEW</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+          <mat-list fxLayout="column wrap">
+            <mat-list-item  > 
+              <i fxFlex="10%" class="material-icons md-24 md-dark">layers</i>
+              <span>Income</span>
+              <span fxFlex></span>
+              31000
+            </mat-list-item>
+            <mat-list-item  > 
+                <i fxFlex="10%" class="material-icons md-24 md-dark">layers</i>
+                <span>Expenses</span>
+                <span fxFlex></span>
+                31000
+              </mat-list-item>
+              <mat-list-item > 
+                  <i fxFlex="10%" class="material-icons md-24 md-dark">layers</i>
+                  <span>Credit cards</span>
+                  <span fxFlex></span>
+                  31000
+                </mat-list-item>
+           </mat-list>
+        </mat-card-content>
+    </mat-card> -->
 </div>
+
+
 

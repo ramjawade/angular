@@ -1,3 +1,23 @@
 mat-grid-tile {
     background: lightblue;
-  }
+}
+.mat-card {
+  border-radius: 15px;
+}
+.parent {
+  padding: 10px;
+}
+
+.fxlayoutgapcontainer div {
+  background: red;
+}
+.small-circle {
+  padding: 5px;
+  background: red !important;
+  border-radius: 5px;
+}
+/* .mat-card-container {
+  padding: 10px;
+} */
+
+

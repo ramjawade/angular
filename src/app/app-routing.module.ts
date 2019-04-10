@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { MaterialModuleModule } from './material-module/material-module.module';
+import { FlexModule} from '@angular/flex-layout';
 
 import { TempComponent } from './temp/temp.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -34,6 +35,7 @@ const routes: Routes = [
   imports: [
     CommonModule,
     MaterialModuleModule,
+    FlexModule,
     RouterModule.forRoot(routes)
   ],
   declarations: [TempComponent,DashboardComponent],
