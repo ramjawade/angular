@@ -16,8 +16,8 @@ mat-grid-tile {
   background: red !important;
   border-radius: 5px;
 }
-/* .mat-card-container {
-  padding: 10px;
-} */
+.mat-card-container {
+  margin-top: 10px;
+}
 
 
