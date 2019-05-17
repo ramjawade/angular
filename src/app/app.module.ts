@@ -4,10 +4,11 @@ import { MaterialModuleModule } from './material-module/material-module.module';
 import { UserManagementModule } from './user-management/user-management.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { FlexModule} from '@angular/flex-layout';
-import { HttpClientModule }    from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { HighchartsChartModule } from 'highcharts-angular';
 
 import { AppComponent } from './app.component';
-import { AuthModule} from  './auth/auth.module';
+import { AuthModule } from './auth/auth.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { MapComponent } from './map/map.component';
@@ -33,10 +34,11 @@ import { FourZeroFourComponent } from './four-zero-four/four-zero-four.component
     AppRoutingModule,
     HttpClientModule,
     UserManagementModule,
-    LeafletModule.forRoot()
-  ],  
+    LeafletModule.forRoot(),
+    HighchartsChartModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
+export class AppModule {
 }

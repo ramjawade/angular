@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { MaterialModuleModule } from './material-module/material-module.module';
 import { FlexModule} from '@angular/flex-layout';
+import { HighchartsChartModule } from 'highcharts-angular';
 
 import { TempComponent } from './temp/temp.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -13,20 +14,20 @@ import { FourZeroFourComponent } from './four-zero-four/four-zero-four.component
 
 const routes: Routes = [
   {
-    path : "",
-    loadChildren : "./auth/auth.module#AuthModule" 
+    path : '',
+    loadChildren : './auth/auth.module#AuthModule'
   },
   { path: 'temp', component: TempComponent },
-  { path:'dashboard',component: DashboardComponent},
-  { path:'map',component:MapComponent},
-  { path : "userMgt", component : ListingUserComponent},
-  { path : "createUser", component : CreateUserComponent},
+  { path: 'dashboard', component: DashboardComponent},
+  { path: 'map', component: MapComponent},
+  { path : 'userMgt', component : ListingUserComponent},
+  { path : 'createUser', component : CreateUserComponent},
   {
-    path : "projects",
-    loadChildren : "./project/project.module#ProjectModule"  // # - lazy loding of module
+    path : 'projects',
+    loadChildren : './project/project.module#ProjectModule'  // # - lazy loding of module
   },
   {
-    path : "**",
+    path : '**',
     component : FourZeroFourComponent
   }
 ];
@@ -36,12 +37,13 @@ const routes: Routes = [
     CommonModule,
     MaterialModuleModule,
     FlexModule,
+    HighchartsChartModule,
     RouterModule.forRoot(routes)
   ],
-  declarations: [TempComponent,DashboardComponent],
+  declarations: [TempComponent, DashboardComponent],
   exports : [RouterModule]
 })
 
-export class AppRoutingModule { 
-  
+export class AppRoutingModule {
+
 }
