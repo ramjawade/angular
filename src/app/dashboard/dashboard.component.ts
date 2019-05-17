@@ -35,7 +35,7 @@ export class DashboardComponent implements OnInit {
           }
         },
         showInLegend : true
-      } 
+      }
     },
     series: [{
       type: 'pie',

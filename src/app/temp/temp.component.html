@@ -1,6 +1,8 @@
 <div class="parent-temp">
-    <mat-drawer-container class="example-container">
-      <mat-drawer mode="side" opened>
+  <button mat-button *ngIf="(isLargeScreen | async)" (click)="toggleFilter()">Click me!</button>  
+  <mat-drawer-container class="example-container">
+      <mat-drawer [mode]=" (isLargeScreen | async )? 'over' : 'side'" [opened]="!(isLargeScreen$ | async) && (openDrawer)">
+        
         <div class="filter-padding">Filters</div>
         <mat-divider></mat-divider>
         <mat-accordion>
@@ -11,11 +13,10 @@
                 </mat-panel-title>
               </mat-expansion-panel-header>
               <mat-list role="list">
-                <mat-list-item role="listitem">All Shirts</mat-list-item>
+                  <mat-list-item role="listitem">All Shirts</mat-list-item>
                 <mat-list-item role="listitem">Fromal Shirts</mat-list-item>
                 <mat-list-item role="listitem">Party Wear</mat-list-item>
               </mat-list>
-                
             </mat-expansion-panel>
             <mat-expansion-panel>
                 <mat-expansion-panel-header>
@@ -33,6 +34,26 @@
         </mat-accordion>
           
       </mat-drawer>
-      <mat-drawer-content>Main content</mat-drawer-content>
+      <mat-drawer-content>
+        <div fxFlex fxLayout="column">
+          <div>
+              Home > ClothingMen's > Clothing
+              <p>Ranging from t-shirts, shirts, jeans, trousers, suits and blazers to sweaters and other seasonal wear, discover a comprehensive range of men’s clothing on Flipkart. Shop among Wrangler, Peter England, Lee, Metronaut, Indian Terrain, United Colors of Benetton and other big-wigs.</p>
+              <p>Men's Clothing(Showing 1 – 40 products of 90,867 products)</p>
+          </div>
+          <div fxLayout="row wrap" fxLayoutAlign="space-around start" >
+              <mat-card class="temp-card" *ngFor="let item of [1,2,3,4,5,6,8,2,3,4,4,5,5,5,5,6]" fxFlex.lg="24.5%">
+                  <img mat-card-image src="../../assets/m-style-tshirt-try-this-original-imaf8zxukgz3cjhq.jpeg" alt="Photo of a Shiba Inu">
+                  <mat-card-content>
+                      Try This
+                      Solid Men Polo Neck Black, White T-Shirt
+                      ₹480₹1,29963% off
+                      Size S, M, L, XL, XXL
+                  </mat-card-content>
+              </mat-card>
+          </div>
+        </div>
+         
+      </mat-drawer-content>
     </mat-drawer-container>
 </div>

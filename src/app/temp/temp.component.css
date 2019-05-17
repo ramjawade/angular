@@ -44,9 +44,7 @@
     /* background-color: lightgrey; */
 }
 
+.temp-card {
+    margin-bottom: 5px;
+}
 
-/* mat-list-item left-color
-.left-color {
-    border-left: 6px solid red;
-    background-color: lightgrey;
-  } */
