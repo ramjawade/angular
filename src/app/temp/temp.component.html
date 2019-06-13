@@ -36,10 +36,16 @@
       </mat-drawer>
       <mat-drawer-content>
         <div fxFlex fxLayout="column">
-          <div>
-              Home > ClothingMen's > Clothing
-              <p>Ranging from t-shirts, shirts, jeans, trousers, suits and blazers to sweaters and other seasonal wear, discover a comprehensive range of men’s clothing on Flipkart. Shop among Wrangler, Peter England, Lee, Metronaut, Indian Terrain, United Colors of Benetton and other big-wigs.</p>
-              <p>Men's Clothing(Showing 1 – 40 products of 90,867 products)</p>
+          <div fxLayout="column">
+            <div>
+                Home > ClothingMen's > Clothing
+            </div>
+            <div>
+                Ranging from t-shirts, shirts, jeans, trousers, suits and blazers to sweaters and other seasonal wear, discover a comprehensive range of men’s clothing on Flipkart. Shop among Wrangler, Peter England, Lee, Metronaut, Indian Terrain, United Colors of Benetton and other big-wigs.
+            </div>
+            <div>
+                Men's Clothing(Showing 1 – 40 products of 90,867 products)
+            </div>
           </div>
           <div fxLayout="row wrap" fxLayoutAlign="space-around start" >
               <mat-card class="temp-card" *ngFor="let item of [1,2,3,4,5,6,8,2,3,4,4,5,5,5,5,6]" fxFlex.lg="24.5%">
@@ -53,7 +59,6 @@
               </mat-card>
           </div>
         </div>
-         
       </mat-drawer-content>
     </mat-drawer-container>
 </div>
