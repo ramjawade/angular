@@ -1,5 +1,5 @@
 import { Component, ViewChild, OnInit } from '@angular/core';
-import {MatSidenavModule } from '@angular/material/sidenav';
+import {MatSidenav } from '@angular/material/sidenav';
 import {
   BreakpointObserver,
   Breakpoints,
@@ -14,7 +14,7 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./temp.component.css']
 })
 export class TempComponent implements OnInit {
-  @ViewChild('MatSidenavModule') MatSidenavModule: any;
+  @ViewChild('sidenav', {static: false}) sidenav: MatSidenav;
 // tslint:disable-next-line: max-line-length
   public  isLargeScreen: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset).pipe(map((result: BreakpointState) => result.matches));
   openDrawer: boolean;
