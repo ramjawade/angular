@@ -7,7 +7,7 @@ import {FormBuilder, FormGroup} from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  options : FormGroup;
+  options: FormGroup;
 
   constructor(fb: FormBuilder) {
     this.options = fb.group({
@@ -20,33 +20,33 @@ export class AppComponent {
   title = 'demo';
   links = [
     {
-      name :"Dashboard",
-      link : "dashboard",
-      icon : "dashboard"
-    },{
-      name :"Home",
-      link : "temp",
-      icon : "home"
-    },{
-      name :"Map",
-      link : "map",
-      icon : "layers"
+      name : 'Dashboard',
+      link : 'dashboard',
+      icon : 'dashboard'
+    }, {
+      name : 'Home',
+      link : 'temp',
+      icon : 'home'
+    }, {
+      name : 'Map',
+      link : 'map',
+      icon : 'layers'
     }
-    ,{
-      name :"User Management",
-      link : "userMgt",
-      icon : "account_circle"
+    , {
+      name : 'User Management',
+      link : 'userMgt',
+      icon : 'account_circle'
     },
     {
-      name :"Create User",
-      link : "createUser",
-      icon : "account_circle"
+      name : 'Create User',
+      link : 'createUser',
+      icon : 'account_circle'
+    }, {
+      name : 'projects',
+      link : 'projects',
+      icon : 'power_settings_new'
     }
     // ,{
-    //   name :"Shut Down",
-    //   link : "def",
-    //   icon : "power_settings_new"
-    // },{
     //   name :"Contact",
     //   link : "def",
     //   icon : "call"
