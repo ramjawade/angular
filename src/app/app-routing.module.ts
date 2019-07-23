@@ -15,7 +15,7 @@ import { FourZeroFourComponent } from './four-zero-four/four-zero-four.component
 const routes: Routes = [
   {
     path : '',
-    loadChildren : './auth/auth.module#AuthModule'
+    loadChildren : () => import('./auth/auth.module').then(m => m.AuthModule)
   },
   { path: 'temp', component: TempComponent },
   { path: 'dashboard', component: DashboardComponent},
@@ -24,7 +24,7 @@ const routes: Routes = [
   { path : 'createUser', component : CreateUserComponent},
   {
     path : 'projects',
-    loadChildren : './project/project.module#ProjectModule'  // # - lazy loding of module
+    loadChildren : () => import('./project/project.module').then(m => m.ProjectModule)  // # - lazy loding of module
   },
   {
     path : '**',

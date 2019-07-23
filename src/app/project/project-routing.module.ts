@@ -2,23 +2,23 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ProjectComponent } from './project/project.component';
 import { ProjctListingComponent } from './projct-listing/projct-listing.component';
-import { CreateProjectComponent} from './create-project/create-project.component'
+import { CreateProjectComponent} from './create-project/create-project.component';
 
 const projectRoutes: Routes = [
   {
-    path : "",
+    path : '',
     component : ProjectComponent,
     children : [
       // projects/id or projects
       {
-        path : "",
+        path : '',
         children : [
           {
-            path : "",
+            path : '',
             component : ProjctListingComponent
           },
           {
-            path : "create",
+            path : 'create',
             component : CreateProjectComponent
           }
         ]
