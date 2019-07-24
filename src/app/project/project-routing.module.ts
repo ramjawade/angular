@@ -26,6 +26,15 @@ const projectRoutes: Routes = [
       }
 
     ]
+  }, {
+    path : "a",
+    loadChildren: ()=> import('./a/a.module').then(mod=>mod.AModule)
+  }, {
+    path:"b",
+    loadChildren : ()=> import('./b/b.module').then(mod=>mod.BModule)
+  }, {
+    path : "c",
+    loadChildren : ()=> import('./c/c.module').then(mod=>mod.CModule)
   }
 ];
 
