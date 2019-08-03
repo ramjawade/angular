@@ -6,6 +6,8 @@ import { MaterialModuleModule } from "./../material-module/material-module.modul
 import { FlexModule} from '@angular/flex-layout';
 import { AgGridModule} from 'ag-grid-angular';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { SharedModule } from '../shared/shared.module';
+
 
 
 @NgModule({
@@ -14,6 +16,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     MaterialModuleModule,
     FlexModule,
     FormsModule, ReactiveFormsModule,
+    SharedModule,
     AgGridModule.withComponents([])
   ],
   declarations: [CreateUserComponent, ListingUserComponent]

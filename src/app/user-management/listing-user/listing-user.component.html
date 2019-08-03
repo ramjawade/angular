@@ -43,25 +43,13 @@
                       </mat-card-header>
                       <mat-divider></mat-divider>
                       <mat-card-content>
-                          <form fxLayout="row wrap" fxLayoutAlign="space-between start">
-                              <mat-form-field fxLayout="column" fxFlex.lg="33%" >
-                                <input matInput placeholder="First Name" value="Dhondiram">
-                              </mat-form-field>
-                              <mat-form-field fxLayout="column" fxFlex.lg="33%" >
-                                  <input matInput placeholder="Middle Name" value="Nivrati">
-                              </mat-form-field>
-                              <mat-form-field fxLayout="column" fxFlex.lg="33%" >
-                                  <input matInput placeholder="Last Name" value="Jawade">
-                              </mat-form-field>
-                              <mat-form-field  fxLayout="column" fxFlex.lg="33%" >
-                                  <input matInput placeholder="Orgnaization" value="Innoeye Technology">
-                                </mat-form-field>
-                                <mat-form-field fxLayout="column" fxFlex.lg="33%" >
-                                    <input matInput placeholder="Phone Number" value="8668359297">
-                                </mat-form-field>
-                                <mat-form-field fxLayout="column" fxFlex.lg="33%" >
-                                    <input matInput placeholder="Address" value="At post Makhani">
-                                </mat-form-field>
+                          <form fxLayout="row wrap" fxLayoutAlign="space-between none">
+                                <app-input fxFlex fxFlex.lg="33%" [lableText]="'First Name'" [modelValue]="'Dhondiram'" [placeholder]="'First Name'"></app-input>
+                                <app-input fxFlex fxFlex.lg="33%" [lableText]="'Middle Name'" [modelValue]="'Nivrati'" [placeholder]="'Middle Name'"></app-input>
+                                <app-input fxFlex fxFlex.lg="33%" [lableText]="'Last Name'" [modelValue]="'Jawade'" [placeholder]="'Last Name'"></app-input>
+                                <app-input fxFlex fxFlex.lg="33%" [lableText]="'Orgnaization'" [modelValue]="'Innoeye Technology'" [placeholder]="'Orgnaization'"></app-input>
+                                <app-input fxFlex fxFlex.lg="33%" [lableText]="'Phone Number'" [modelValue]="'8668359297'" [placeholder]="'Phone Number'"></app-input>
+                                <app-input fxFlex fxFlex.lg="33%" [lableText]="'Address'" [modelValue]="'At post Makhani'" [placeholder]="'Address'"></app-input>
                             </form>
                       </mat-card-content>
                 </mat-card>

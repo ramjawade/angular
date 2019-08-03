@@ -16,7 +16,7 @@ import { map } from 'rxjs/operators';
 export class TempComponent implements OnInit {
   @ViewChild('sidenav', {static: false}) sidenav: MatSidenav;
 // tslint:disable-next-line: max-line-length
-  public  isLargeScreen: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset).pipe(map((result: BreakpointState) => result.matches));
+  isLargeScreen: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset).pipe(map((result: BreakpointState) => result.matches));
   openDrawer: boolean;
   heroes = ['abc', 'ss', 'ssss'];
   constructor(

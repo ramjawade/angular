@@ -1,7 +1,7 @@
 <div class="parent-temp">
   <button mat-button *ngIf="(isLargeScreen | async)" (click)="toggleFilter()">Click me!</button>  
   <mat-drawer-container class="example-container">
-      <mat-drawer [mode]=" (isLargeScreen | async )? 'over' : 'side'" [opened]="!(isLargeScreen$ | async) && (openDrawer)">
+      <mat-drawer [mode]=" (isLargeScreen | async )? 'over' : 'side'" [opened]="!(isLargeScreen | async) && (openDrawer)">
         
         <div class="filter-padding">Filters</div>
         <mat-divider></mat-divider>
