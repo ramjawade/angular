@@ -6,6 +6,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { FlexModule} from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
 import { HighchartsChartModule } from 'highcharts-angular';
+import { PdfViewerModule } from "ng2-pdf-viewer";
 
 import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
@@ -35,7 +36,8 @@ import { FourZeroFourComponent } from './four-zero-four/four-zero-four.component
     HttpClientModule,
     UserManagementModule,
     LeafletModule.forRoot(),
-    HighchartsChartModule
+    HighchartsChartModule,
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

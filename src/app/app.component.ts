@@ -45,6 +45,10 @@ export class AppComponent {
       name : 'projects',
       link : 'projects',
       icon : 'power_settings_new'
+    },{
+      name : 'Pdf Reader',
+      link : 'pdf',
+      icon : 'library_books'
     }
     // ,{
     //   name :"Contact",

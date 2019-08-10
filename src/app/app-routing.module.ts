@@ -27,6 +27,10 @@ const routes: Routes = [
     loadChildren : () => import('./project/project.module').then(m => m.ProjectModule)  // # - lazy loding of module
   },
   {
+    path : "pdf",
+    loadChildren : () => import('./pdf-reader/pdf-reader.module').then(m=>m.PdfReaderModule)
+  },
+  {
     path : '**',
     component : FourZeroFourComponent
   }
