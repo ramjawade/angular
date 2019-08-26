@@ -31,6 +31,10 @@ const routes: Routes = [
     loadChildren : () => import('./pdf-reader/pdf-reader.module').then(m=>m.PdfReaderModule)
   },
   {
+    path : "profile",
+    loadChildren : () => import('./profile/profile.module').then(m=>m.ProfileModule)
+  },
+  {
     path : '**',
     component : FourZeroFourComponent
   }

@@ -49,6 +49,10 @@ export class AppComponent {
       name : 'Pdf Reader',
       link : 'pdf',
       icon : 'library_books'
+    },{
+      name : 'Profile',
+      link : 'profile',
+      icon : 'library_books'
     }
     // ,{
     //   name :"Contact",
