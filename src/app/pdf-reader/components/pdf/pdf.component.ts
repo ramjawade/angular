@@ -7,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PdfComponent implements OnInit {
   pdfSrc : string  = "";
+  placeholder : string = "";
+  
   constructor() { }
 
   ngOnInit() {
     this.pdfSrc = "assets/OSS_Interface_Req_v1.3.pdf"; 
+
   }
 
   afterLoadComplete(evt){

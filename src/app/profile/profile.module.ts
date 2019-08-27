@@ -3,13 +3,16 @@ import { CommonModule } from '@angular/common';
 
 import { ProfileRoutingModule } from './profile-routing.module';
 import { ProfileComponent } from './profile/profile.component';
-
+import { FlexModule} from '@angular/flex-layout';
+import { MaterialModuleModule } from '../material-module/material-module.module';
 
 @NgModule({
   declarations: [ProfileComponent],
   imports: [
     CommonModule,
-    ProfileRoutingModule
+    ProfileRoutingModule,
+    MaterialModuleModule,
+    FlexModule
   ]
 })
 export class ProfileModule { }

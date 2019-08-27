@@ -1,0 +1,7 @@
+.quote-content{
+   /* background-image: url('./../../../assets/1500x500.png'); */
+   height: 500px;
+   text-align: center;
+   color: white;
+   background-color: lightslategrey
+}
