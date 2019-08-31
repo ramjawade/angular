@@ -9,34 +9,49 @@
         </div>
         <div fxLayout="column" fxLayoutAlign="center stretch">
                 <div fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="10px" >
-                        <div fxLayout="column" fxLayoutAlign="center center" *ngFor="let item of [1,2]" >
+                        <div fxLayout="column" fxLayoutAlign="center center" *ngFor="let item of [1,2,3,4]" >
                             <div class="text-area">
                                 <div class="title"> June 25, 2011</div>
+                                <mat-divider></mat-divider>
                                 <p class="discription">Government College Of Engg. Aurangabad</p>
                             </div>
                             <span class="vertical-line "></span>
-                            <div class="bottom-line"></div>
+                            <!-- <div class="bottom-line"></div> -->
+                            <span class="dot" style="margin-bottom: -6px;"></span>
                         </div>
                 </div>
             <div style="    width: 100%;
                 background-color: black;
                 padding-bottom: 1px;">
+            </div>  
+            <div fxLayout="row" fxLayoutAlign="space-around center" style="padding-top: 10px" >
+                <div style="padding: 5px 10px 5px 10px;     background-color: darkgrey;
+                border-radius: 16%;" fxLayout="column" fxLayoutAlign="center center" *ngFor="let item of [1,2,3,4]" >
+                   2018
+                </div>
             </div>
         </div>
         <div fxLayout="row" dir="rtl" fxLayoutAlign="center stretch">
                 <div fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="10px" >
-                        <div fxLayout="row" fxLayoutAlign="center center" dir="rtl" *ngFor="let item of [1,2]" >
+                        <div fxLayout="row" fxLayoutAlign="center center" dir="rtl" *ngFor="let item of [1,2,3,4]" >
                             <div class="text-area">
                                 <div class="title"> June 25, 2011</div>
+                                <mat-divider></mat-divider>
                                 <p class="discription">Government College Of Engg. Aurangabad</p>
                             </div>
-                            <span class="vertical-line "></span>
+                            <!-- <span class="vertical-line "></span> -->
                             <div class="bottom-line"></div>
+                            <span class="dot" style="margin-left: -6px;"></span>
                         </div>
                     </div>
                 <div style="width: 1px;background-color: black;"></div>
-        </div>
-       
+                <div fxLayout="column" fxLayoutAlign="space-around center" style="padding-right: 10px">
+                    <div style="padding: 5px 10px 5px 10px;     background-color: darkgrey;
+                    border-radius: 16%;" fxLayout="row" fxLayoutAlign="center center" *ngFor="let item of [1,2,3,4]" >
+                       2018
+                    </div>
+                </div>
+        </div>  
     </div>
 </div>
 

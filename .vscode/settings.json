@@ -1,0 +1,8 @@
+{
+    "terminal.integrated.rendererType": "dom",
+    "terminal.integrated.fontWeightBold": "normal",
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.drawBoldTextInBrightColors": false,
+    "terminal.integrated.fontWeight": "100",
+    "terminal.integrated.setLocaleVariables": false
+}
