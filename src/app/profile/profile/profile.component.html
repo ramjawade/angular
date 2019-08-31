@@ -1,5 +1,5 @@
 <div class="main-profile">
-    <div div fxLayout="column" fxLayoutAlign="space-around stretch" fxLayoutGap="10px">
+    <div div fxLayout="column" fxLayoutAlign="stretch" fxLayoutGap="10px">
         <div>toolbar</div>
         <div class="quote-content"> 
                 <div fxFill fxLayout="row" fxLayoutAlign="space-around center" >
@@ -7,51 +7,66 @@
                     <img style="height: 90%;" [src]="profileImg" alt="image">
                 </div>
         </div>
-        <div fxLayout="column" fxLayoutAlign="center stretch">
-                <div fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="10px" >
-                        <div fxLayout="column" fxLayoutAlign="center center" *ngFor="let item of [1,2,3,4]" >
+        
+        <!-- <div fxLayout="column" fxLayoutAlign="center stretch">
+            <div fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="10px" >
+                        <div fxLayout="column" fxLayoutAlign="center center" *ngFor="let item of [1,2,3]" >
                             <div class="text-area">
-                                <div class="title"> June 25, 2011</div>
+                                <div class="title"> Collage</div>
                                 <mat-divider></mat-divider>
-                                <p class="discription">Government College Of Engg. Aurangabad</p>
+                                <p class="header"> Government College Of Engg. Aurangabad. </p>
+                                <p class="discription">
+                                    Software Developer, Aug 2017 to Pasetnt
+                                </p>
                             </div>
                             <span class="vertical-line "></span>
-                            <!-- <div class="bottom-line"></div> -->
+                            <div class="bottom-line"></div>
                             <span class="dot" style="margin-bottom: -6px;"></span>
                         </div>
-                </div>
+            </div>
             <div style="    width: 100%;
                 background-color: black;
                 padding-bottom: 1px;">
             </div>  
             <div fxLayout="row" fxLayoutAlign="space-around center" style="padding-top: 10px" >
                 <div style="padding: 5px 10px 5px 10px;     background-color: darkgrey;
-                border-radius: 16%;" fxLayout="column" fxLayoutAlign="center center" *ngFor="let item of [1,2,3,4]" >
+                border-radius: 16%;" fxLayout="column" fxLayoutAlign="center center" *ngFor="let item of [1,2,3]" >
                    2018
                 </div>
             </div>
-        </div>
-        <div fxLayout="row" dir="rtl" fxLayoutAlign="center stretch">
-                <div fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="10px" >
-                        <div fxLayout="row" fxLayoutAlign="center center" dir="rtl" *ngFor="let item of [1,2,3,4]" >
-                            <div class="text-area">
-                                <div class="title"> June 25, 2011</div>
-                                <mat-divider></mat-divider>
-                                <p class="discription">Government College Of Engg. Aurangabad</p>
+        </div> -->
+       <div class="timeline" fxLayout="column">
+           <div style="padding: 10px">
+                <span style="font-size: 18px; "> My Timeline</span>
+           </div>
+           <mat-divider></mat-divider>
+            <div fxLayout="row" dir="rtl" fxLayoutAlign="center stretch">
+                    <div fxFlex fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="10px" >
+                            <div  fxLayout="row" fxLayoutAlign="center center" dir="rtl" *ngFor="let item of [1,2,3]" >
+                                <div fxFlex class="text-area">
+                                    <div class="title"> Education</div>
+                                    <mat-divider></mat-divider>
+                                    <p class="header"> Government College Of Engg. Aurangabad. </p>
+                                    <p class="discription">
+                                        Software Developer, Aug 2017 to Pasetnt
+                                    </p>
+                                </div>
+                                <!-- <span class="vertical-line "></span> -->
+                                <div fxFlex="20" class="bottom-line"></div>
+                                <span class="dot" style="margin-left: -6px;"></span>
                             </div>
-                            <!-- <span class="vertical-line "></span> -->
-                            <div class="bottom-line"></div>
-                            <span class="dot" style="margin-left: -6px;"></span>
+                        </div>
+                    <div  style="width: 1px;background-color: black; height: -webkit-fill-available;"></div>
+                    <div fxFlex="20"  fxLayout="column" fxLayoutAlign="space-around center" style="padding-right: 10px">
+                        <div style="padding: 5px 10px 5px 10px;     background-color: darkgrey;
+                        border-radius: 16%;" fxLayout="row" fxLayoutAlign="center center" *ngFor="let item of [1,2,3]" >
+                           2018
                         </div>
                     </div>
-                <div style="width: 1px;background-color: black;"></div>
-                <div fxLayout="column" fxLayoutAlign="space-around center" style="padding-right: 10px">
-                    <div style="padding: 5px 10px 5px 10px;     background-color: darkgrey;
-                    border-radius: 16%;" fxLayout="row" fxLayoutAlign="center center" *ngFor="let item of [1,2,3,4]" >
-                       2018
-                    </div>
-                </div>
-        </div>  
+            </div>  
+            <mat-divider></mat-divider>
+       </div>
+       
     </div>
 </div>
 

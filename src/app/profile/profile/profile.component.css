@@ -20,18 +20,34 @@
    border: 1px solid;
    font-size: 14px;
    background-color: white;
+   direction: ltr;
 }
 .text-area .title {
    font-size: 16px;
    color: #2196F3;
+   text-transform: uppercase;
+}
+.text-area .header {
+   margin: 0px;
+   margin-top: 5px;
+   font-size: 16px;
+   font-weight: 400;
+   opacity: 0.7;
 }
 .text-area .discription{
    margin: 0px;
    font-weight: normal;
+   font-weight: 400;
+   opacity: 0.5;
  }
  .dot {
    padding: 6px;
    background-color: #2196F3;
    border-radius: 100%;
    z-index: 9;
+ }
+
+ .timeline {
+   background-color: ghostwhite;
+   padding: 5px;
  }
