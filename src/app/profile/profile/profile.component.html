@@ -41,8 +41,9 @@
            </div>
            <mat-divider></mat-divider>
             <div fxLayout="row" dir="rtl" fxLayoutAlign="center stretch">
-                    <div fxFlex fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="10px" >
-                            <div  fxLayout="row" fxLayoutAlign="center center" dir="rtl" *ngFor="let item of [1,2,3]" >
+                <div fxFlex="5"></div>    
+                <div fxFlex fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="10px" >
+                            <div style="width: 100%"fxLayout="row" fxLayoutAlign="center center" dir="rtl" *ngFor="let item of [1,2,3]" >
                                 <div fxFlex class="text-area">
                                     <div class="title"> Education</div>
                                     <mat-divider></mat-divider>
@@ -67,6 +68,92 @@
             <mat-divider></mat-divider>
        </div>
        
+       <div class="timeline" fxLayout="column">
+            <div style="padding: 10px">
+                    <span style="font-size: 18px; "> My Timeline</span>
+            </div>
+            <mat-divider></mat-divider>
+            <div fxLayout="column" fxLayoutAlign=" stretch" >
+                <div fxLayout="row" fxLayoutAlign="space-between stretch">
+                    <div fxLayout="column" fxLayoutAlign="end center" *ngFor="let item of [1,2,3,4]; let even = even; let odd = odd ">
+                        <div *ngIf="even" class="text-area">
+                                <div class="title"> Collage</div>
+                                <mat-divider></mat-divider>
+                                <p class="header"> Government College Of Engg. Aurangabad. </p>
+                                <p class="discription">
+                                    Software Developer, Aug 2017 to Pasetnt
+                                </p>
+                        </div>
+                        <div *ngIf="even" class="vertical-line"></div>
+                        <div *ngIf="even" class="dot" ></div>
+                        <div *ngIf="odd">2018</div>
+                    </div>
+                </div>
+                <div class="middle-line"></div>
+                <div>
+                    <div fxLayout="row" fxLayoutAlign="space-between stretch">
+                        <div fxLayout="column-reverse" fxLayoutAlign="end center" *ngFor="let item of [1,2,3,4]; let even = even; let odd = odd ">
+                            <div *ngIf="odd" class="text-area">
+                                    <div class="title"> Collage</div>
+                                    <mat-divider></mat-divider>
+                                    <p class="header"> Government College Of Engg. Aurangabad. </p>
+                                    <p class="discription">
+                                        Software Developer, Aug 2017 to Pasetnt
+                                    </p>
+                            </div>
+                            <div *ngIf="even">2018</div>
+                            <div *ngIf="odd" class="vertical-line"></div>
+                            <div *ngIf="odd" class="dot" ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+
+       <div class="timeline" fxLayout="column">
+            <div style="padding: 10px">
+                    <span style="font-size: 18px; "> My Timeline</span>
+            </div>
+            <mat-divider></mat-divider>
+            <div fxLayout="row" fxLayoutAlign="center stretch" >
+                <div style="width: 100%">
+                    <div fxLayout="column" fxLayoutAlign="space-between stretch">
+                        <div fxLayout="row" fxLayoutAlign="end center" *ngFor="let item of [1,2,3,4]; let even = even; let odd = odd ">
+                                <div *ngIf="even" class="text-area">
+                                        <div class="title"> Collage</div>
+                                        <mat-divider></mat-divider>
+                                        <p class="header"> Government College Of Engg. Aurangabad. </p>
+                                        <p class="discription">
+                                            Software Developer, Aug 2017 to Pasetnt
+                                        </p>
+                                </div>
+                                <div *ngIf="odd">2018</div>
+                            <div *ngIf="even" class="bottom-line"></div>
+                            <span *ngIf="even" class="dot" style="margin-bottom: -6px;"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="new-vertical-line"></div>
+                <div style="width: 100%">
+                    <div fxLayout="column" fxLayoutAlign="space-between stretch">
+                        <div fxLayout="row-reverse" fxLayoutAlign="end center" *ngFor="let item of [1,2,3,4]; let even = even; let odd = odd ">
+                                <div *ngIf="odd" class="text-area">
+                                        <div class="title"> Collage</div>
+                                        <mat-divider></mat-divider>
+                                        <p class="header"> Government College Of Engg. Aurangabad. </p>
+                                        <p class="discription">
+                                            Software Developer, Aug 2017 to Pasetnt
+                                        </p>
+                                </div>
+                                <div *ngIf="even">2018</div>
+                            <div *ngIf="odd" class="bottom-line"></div>
+                            <span *ngIf="odd" class="dot" style="margin-bottom: -6px;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
     </div>
 </div>
 
