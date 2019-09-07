@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ProfileRoutingModule } from './profile-routing.module';
 import { ProfileComponent } from './profile/profile.component';
-import { FlexModule} from '@angular/flex-layout';
+import { FlexLayoutModule, FlexModule} from '@angular/flex-layout';
 import { MaterialModuleModule } from '../material-module/material-module.module';
 
 @NgModule({
@@ -12,7 +12,8 @@ import { MaterialModuleModule } from '../material-module/material-module.module'
     CommonModule,
     ProfileRoutingModule,
     MaterialModuleModule,
-    FlexModule
+    FlexModule,
+    FlexLayoutModule
   ]
 })
 export class ProfileModule { }

@@ -21,7 +21,7 @@ import { FourZeroFourComponent } from './four-zero-four/four-zero-four.component
   declarations: [
     AppComponent,
     MapComponent,
-    FourZeroFourComponent
+    FourZeroFourComponent 
   ],
   imports: [
     AgGridModule,

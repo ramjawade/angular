@@ -19,7 +19,9 @@ const routes: Routes = [
   },
   { path: 'temp', component: TempComponent },
   { path: 'dashboard', component: DashboardComponent},
-  { path: 'map', component: MapComponent},
+  { path: 'map',
+    loadChildren : () => import ('./g-map/g-map.module').then(m => m.GMapModule)
+},
   { path : 'userMgt', component : ListingUserComponent},
   { path : 'createUser', component : CreateUserComponent},
   {
@@ -27,12 +29,12 @@ const routes: Routes = [
     loadChildren : () => import('./project/project.module').then(m => m.ProjectModule)  // # - lazy loding of module
   },
   {
-    path : "pdf",
-    loadChildren : () => import('./pdf-reader/pdf-reader.module').then(m=>m.PdfReaderModule)
+    path : 'pdf',
+    loadChildren : () => import('./pdf-reader/pdf-reader.module').then(m => m.PdfReaderModule)
   },
   {
-    path : "profile",
-    loadChildren : () => import('./profile/profile.module').then(m=>m.ProfileModule)
+    path : 'profile',
+    loadChildren : () => import('./profile/profile.module').then(m => m.ProfileModule)
   },
   {
     path : '**',
