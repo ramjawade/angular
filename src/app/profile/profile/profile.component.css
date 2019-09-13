@@ -1,9 +1,9 @@
 .quote-content{
-   /* background-image: url('./../../../assets/1500x500.png'); */
+   background-image: url('./../../../assets/PicsArt_09-13-09.40.53.jpg');
    height: 500px;
    text-align: center;
    color: white;
-   background-color: lightslategrey
+   /* background-color: lightslategrey */
 }
 .vertical-line {
    padding: 10px 0px 10px 0px;
