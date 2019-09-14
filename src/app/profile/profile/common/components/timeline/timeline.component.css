@@ -1,0 +1,43 @@
+.vertical-line {
+    padding: 10px 0px 10px 0px;
+    background-color: #607D8B;
+    width: 2px;
+ }
+ .bottom-line {
+    padding-bottom: 2px;
+    background-color: black;
+     width: 20%;
+ }
+ 
+  .dot {
+    padding: 6px;
+    background-color: #2196F3;
+    border-radius: 100%;
+    z-index: 9;
+  }
+ 
+  .timeline {
+    background-color: ghostwhite;
+    padding: 5px;
+  }
+  .middle-row {
+    background-color: #ffc10745;
+  }
+ 
+  .new-vertical-line {
+    display: block;
+    margin: 0;
+    border-left-width: 1px;
+    border-left-style: solid;
+  }
+  .space {
+     height: 15px
+  }
+  .horizonatal-space{
+     width: 15px;
+  }
+ 
+  .margin-10 {
+     margin: 8px;
+  }
+ 

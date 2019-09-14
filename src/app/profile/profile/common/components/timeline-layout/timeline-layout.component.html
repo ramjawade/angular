@@ -1,0 +1,8 @@
+<div *ngIf="type == 'up'" [ngClass]="{'visibility-hidden': !visible}" fxLayout.lg="column" fxLayout="row" fxLayoutAlign="space-between center">
+    <app-timeline-card [item]="item"></app-timeline-card>
+    <app-tringle  *ngIf="visible" [type]="type"></app-tringle>
+</div>
+<div *ngIf="type == 'down'" [ngClass]="{'visibility-hidden': !visible}" fxLayout.lg="column-reverse" fxLayout="row-reverse" fxLayoutAlign="space-between center">
+    <app-timeline-card [item]="item"></app-timeline-card>
+    <app-tringle  *ngIf="visible" [type]="type"></app-tringle>
+</div>

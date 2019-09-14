@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LLayerComponent } from './l-layer.component';
+import { TimelineLayoutComponent } from './timeline-layout.component';
 
-describe('LLayerComponent', () => {
-  let component: LLayerComponent;
-  let fixture: ComponentFixture<LLayerComponent>;
+describe('TimelineLayoutComponent', () => {
+  let component: TimelineLayoutComponent;
+  let fixture: ComponentFixture<TimelineLayoutComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LLayerComponent ]
+      declarations: [ TimelineLayoutComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LLayerComponent);
+    fixture = TestBed.createComponent(TimelineLayoutComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

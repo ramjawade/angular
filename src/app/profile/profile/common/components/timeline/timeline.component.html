@@ -1,0 +1,20 @@
+<div class="timeline" fxLayout="column">
+        <div style="padding: 10px" fxLayout="column" fxLayoutAlign="space-between center">
+            <h2>My road to glory</h2>
+            <span> Below you can see a timeline of my education and some profetional achivements</span>
+        </div>
+        <mat-divider></mat-divider>
+        <div fxLayout.lg="column" fxLayout="row" fxLayoutAlign="center stretch" >
+            <div class="margin-10" fxLayout.lg="row" fxLayout="column" fxLayoutAlign="space-around stretch">
+                <app-timeline-layout [type]="'up'" [visible]="even" [item]="item" *ngFor="let item of timeLineList; let even = even; let odd = odd"></app-timeline-layout>
+            </div>
+            <div class="middle-row margin-10" fxLayout.lg="row" fxLayout="column" fxLayoutAlign="space-around stretch">
+                    <div fxLayout.lg="column" fxLayout="row" fxLayoutAlign="space-between center" *ngFor="let item of timeLineList">
+                        <div class="dot" ></div>
+                    </div>
+            </div>
+            <div class="margin-10" fxLayout.lg="row" fxLayout="column" fxLayoutAlign="space-around stretch">
+                <app-timeline-layout [type]="'down'" [visible]="odd" [item]="item" *ngFor="let item of timeLineList; let even = even; let odd = odd"></app-timeline-layout>
+            </div>
+        </div>
+   </div>
