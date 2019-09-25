@@ -14,12 +14,10 @@ import { MaterialModuleModule } from './material-module/material-module.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AuthModule } from './auth/auth.module';
 import { AppComponent } from './app.component';
-import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MapComponent,
     FourZeroFourComponent 
   ],
   imports: [
