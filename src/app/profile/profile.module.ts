@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CoreModule } from "../core/core.module";
 
 import { ProfileRoutingModule } from './profile-routing.module';
 import { ProfileComponent } from './profile/profile.component';
@@ -17,7 +18,8 @@ import { TimelineComponent } from './profile/common/components/timeline/timeline
     ProfileRoutingModule,
     MaterialModuleModule,
     FlexModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    CoreModule
   ]
 })
 export class ProfileModule { }

@@ -1,21 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MaterialModuleModule } from './material-module/material-module.module';
-import { UserManagementModule } from './user-management/user-management.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { FlexModule} from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { PdfViewerModule } from "ng2-pdf-viewer";
-
-import { AppComponent } from './app.component';
-import { AuthModule } from './auth/auth.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AppRoutingModule } from './app-routing.module';
-import { MapComponent } from './map/map.component';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { AgGridModule} from 'ag-grid-angular';
+
 import { FourZeroFourComponent } from './four-zero-four/four-zero-four.component';
+import { MaterialModuleModule } from './material-module/material-module.module';
+import { AppRoutingModule } from './app-routing.module';
+import { AuthModule } from './auth/auth.module';
+import { AppComponent } from './app.component';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +33,6 @@ import { FourZeroFourComponent } from './four-zero-four/four-zero-four.component
     AuthModule,
     AppRoutingModule,
     HttpClientModule,
-    UserManagementModule,
     LeafletModule.forRoot(),
     HighchartsChartModule,
     PdfViewerModule

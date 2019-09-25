@@ -34,12 +34,12 @@ export class AppComponent {
     }
     , {
       name : 'User Management',
-      link : 'userMgt',
+      link : 'user/list',
       icon : 'account_circle'
     },
     {
       name : 'Create User',
-      link : 'createUser',
+      link : 'user/create',
       icon : 'account_circle'
     }, {
       name : 'projects',

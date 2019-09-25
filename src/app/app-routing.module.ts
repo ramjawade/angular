@@ -21,9 +21,7 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent},
   { path: 'map',
     loadChildren : () => import ('./g-map/g-map.module').then(m => m.GMapModule)
-},
-  { path : 'userMgt', component : ListingUserComponent},
-  { path : 'createUser', component : CreateUserComponent},
+  },
   {
     path : 'projects',
     loadChildren : () => import('./project/project.module').then(m => m.ProjectModule)  // # - lazy loding of module
@@ -35,6 +33,9 @@ const routes: Routes = [
   {
     path : 'profile',
     loadChildren : () => import('./profile/profile.module').then(m => m.ProfileModule)
+  },{
+    path :"user",
+    loadChildren : () => import('./user-management/user-management.module').then(m=>m.UserManagementModule)
   },
   {
     path : '**',

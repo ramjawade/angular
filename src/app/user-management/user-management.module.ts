@@ -7,6 +7,7 @@ import { FlexModule} from '@angular/flex-layout';
 import { AgGridModule} from 'ag-grid-angular';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
+import { UserManagementRoutingModule } from './user-management-routing.module';
 
 
 
@@ -17,7 +18,8 @@ import { SharedModule } from '../shared/shared.module';
     FlexModule,
     FormsModule, ReactiveFormsModule,
     SharedModule,
-    AgGridModule.withComponents([])
+    AgGridModule.withComponents([]),
+    UserManagementRoutingModule
   ],
   declarations: [CreateUserComponent, ListingUserComponent]
 })
