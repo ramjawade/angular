@@ -4,7 +4,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { FlexModule} from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
 import { HighchartsChartModule } from 'highcharts-angular';
-import { PdfViewerModule } from "ng2-pdf-viewer";
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { AgGridModule} from 'ag-grid-angular';
@@ -27,7 +27,7 @@ import { FourZeroFourComponent } from './four-zero-four/four-zero-four.component
 @NgModule({
   declarations: [
     AppComponent,
-    FourZeroFourComponent 
+    FourZeroFourComponent
   ],
   imports: [
     AgGridModule,
