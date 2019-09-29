@@ -9,12 +9,15 @@
                 <app-timeline-layout [type]="'up'" [visible]="even" [item]="item" *ngFor="let item of timeLineList; let even = even; let odd = odd"></app-timeline-layout>
             </div>
             <div class="middle-row margin-10" fxLayout.lg="row" fxLayout="column" fxLayoutAlign="space-around stretch">
-                    <div fxLayout.lg="column" fxLayout="row" fxLayoutAlign="space-between center" *ngFor="let item of timeLineList">
-                        <div class="dot" ></div>
-                    </div>
+                <div fxHide.lg="true" fxShow.sm="true" fxShow.xs="true" fxShow.md="true"  [style.height.px]="cardWith[i].clientHeight" xLayout.lg="column" fxLayout="row" fxLayoutAlign="center center" *ngFor="let item of timeLineList; let i = index">
+                    <div class="dot" ></div>
+                </div>
+                <div fxShow.lg="true" fxHide.sm="true" fxHide.xs="true" fxHide.md="true"  [style.width.px]="cardWith[i].clientWidth" xLayout.lg="column" fxLayout="row" fxLayoutAlign="center center" *ngFor="let item of timeLineList; let i = index">
+                    <div class="dot" ></div>
+                </div>
             </div>
             <div class="margin-10" fxLayout.lg="row" fxLayout="column" fxLayoutAlign="space-around stretch">
                 <app-timeline-layout [type]="'down'" [visible]="odd" [item]="item" *ngFor="let item of timeLineList; let even = even; let odd = odd"></app-timeline-layout>
             </div>
-        </div>
+        </div> 
    </div>

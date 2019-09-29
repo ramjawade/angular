@@ -6,7 +6,7 @@
  }
  .text-area .title {
     color: #2196F3;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
  }
  .text-area .header {
     margin: 0px;

@@ -23,10 +23,12 @@ import { AppComponent } from './app.component';
  * Error Component
  */
 import { FourZeroFourComponent } from './four-zero-four/four-zero-four.component';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    MapComponent,
     FourZeroFourComponent
   ],
   imports: [
