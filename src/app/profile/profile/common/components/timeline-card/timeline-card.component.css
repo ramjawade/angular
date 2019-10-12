@@ -1,12 +1,12 @@
 .text-area {
     padding: 10px;
     box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
-    font-size: 12px;
+    font-size: 14px;
     background-color: white;
  }
  .text-area .title {
     color: #2196F3;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
  }
  .text-area .header {
     margin: 0px;

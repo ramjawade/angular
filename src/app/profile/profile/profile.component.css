@@ -1,9 +1,15 @@
 .quote-content{
-   background-image: url('./../../../assets/PicsArt_09-13-09.40.53.jpg');
+   background-image: url('./../../../assets/DSC_4998-1.png');
    height: 500px;
    text-align: center;
    color: white;
+   background-position: right;
    /* background-color: lightslategrey */
+}
+
+.quote-content div {
+   padding: 10px;
+   font-size: 28px;
 }
 
 

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { GlobleCommonService } from "../../core/services/globle-common.service";
+import { GlobleCommonService } from '../../core/services/globle-common.service';
 
 @Component({
   selector: 'app-profile',
@@ -8,15 +8,15 @@ import { GlobleCommonService } from "../../core/services/globle-common.service";
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-  profileImg = '../demo/assets/newwhite.jpg';
+  profileImg = '../demo/assets/DSC_4998-1.JPG';
   constructor(
-    private globleCommon : GlobleCommonService
+    private globleCommon: GlobleCommonService
   ) { }
 
   ngOnInit() {
-      this.globleCommon.sendGetRequest("abc/vhhf",{}).subscribe(data=>{
-        console.log("data");
-      })
+      this.globleCommon.sendGetRequest('abc/vhhf', {}).subscribe(data => {
+        console.log('data');
+      });
   }
 
 }

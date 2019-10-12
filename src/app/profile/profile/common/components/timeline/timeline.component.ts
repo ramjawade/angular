@@ -18,7 +18,7 @@ export class TimelineComponent implements OnInit {
     }, {
       title : 'Jun 2011 - Feb 2013',
       subtitle : ' A.C.S College Gangakhed.',
-      discription : 'COllage'
+      discription : 'Collage'
     }, {
       title : 'Aug 2013 - May 2017',
       subtitle : ' Government College Of Engg. Aurangabad.',
