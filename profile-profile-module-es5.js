@@ -51,7 +51,7 @@ module.exports = "<div fxShow.lg=\"true\" fxHide.sm=\"true\" fxHide.xs=\"true\" 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"main-profile\">\n    <div div fxLayout=\"column\" fxLayoutAlign=\"stretch\" fxLayoutGap=\"10px\">\n        <div class=\"quote-content\" fxLayout=\"column\">\n            <div  fxFlex=\"45\"></div>\n            <div  fxLayout=\"row\" >\n                    <div>Hi! I'm Dhondiram Jawade <br>\n                        A web developer, environmental lover & photographer love to explore new thing and places.\n                        Codding is my passion and I love JavaScript and related technology and framework. </div> \n                    <div fxShow.lg=\"true\" fxHide.sm=\"true\" fxHide.xs=\"true\" fxHide.md=\"true\" fxFlex=\"20\"></div>\n            </div>\n        </div>\n        <app-timeline></app-timeline>\n    </div>\n</div>\n\n"
+module.exports = "<div class=\"main-profile\">\n    <div div fxLayout=\"column\" fxLayoutAlign=\"stretch\" fxLayoutGap=\"10px\">\n        <div class=\"quote-content\" fxLayout=\"column\">\n            <div  fxFlex=\"45\"></div>\n            <div  fxLayout=\"row\" >\n                    <h4>Hi! I'm Dhondiram Jawade <br>\n                        A web developer, environmental lover & photographer love to explore new thing and places.\n                        Codding is my passion and I love JavaScript and related technology and framework. </h4> \n                    <div fxShow.lg=\"true\" fxHide.sm=\"true\" fxHide.xs=\"true\" fxHide.md=\"true\" fxFlex=\"20\"></div>\n            </div>\n        </div>\n        <app-timeline></app-timeline>\n    </div>\n</div>\n\n"
 
 /***/ }),
 
