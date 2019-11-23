@@ -21,7 +21,8 @@ const routes: Routes = [{
   loadChildren : () => import('./auth/auth.module').then(m => m.AuthModule)
 },{ 
   path: 'map',
-  loadChildren : () => import ('./g-map/g-map.module').then(m => m.GMapModule)
+  component : MapComponent
+  // loadChildren : () => import ('./map/map.component').then(m => m.GMapModule)
 },{
   path : 'projects',
   loadChildren : () => import('./project/project.module').then(m => m.ProjectModule)  // # - lazy loding of module

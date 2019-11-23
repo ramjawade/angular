@@ -20,6 +20,16 @@
     font-weight: 400;
     opacity: 0.5;
   }
+  .text-area:hover::before {
+   /* transform: scale(1.1); */
+   /* box-shadow: 0 0 15px #ffee10; */
+ }
 
+ .text-area:hover {
+   /* color: #ffee10; */
+   /* transform: scale(1.1);
+   box-shadow: 0 0 5px #3f51b5; */
+   /* text-shadow: 0 0 5px #3f51b5; */
+ }
  
 

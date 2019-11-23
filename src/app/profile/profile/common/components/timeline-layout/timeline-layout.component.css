@@ -1,3 +1,15 @@
 .visibility-hidden{
     visibility: hidden;
  }
+
+.timeline-layout:hover {
+    /* color: #ffee10; */
+    transform: scale(1.1);
+    box-shadow: 0 0 5px #3f51b5;
+    /* text-shadow: 0 0 5px #3f51b5; */
+  }
+.timeline-layout:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #3f51b5;
+  }
+ 

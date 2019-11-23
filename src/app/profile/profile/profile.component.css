@@ -8,9 +8,32 @@
 }
 
 .quote-content div {
-   padding: 10px;
    font-size: 28px;
 }
 
+.profile-footer {
+   background: #3496f3;
+   padding: 20px;
+}
+.follow-me-icon i {
+   border: 1px solid #000;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 34px;
+   height: 34px;
+   text-align: center;
+   border-radius: 50%;
+   overflow: hidden;
+   cursor: pointer;
+   transition: all 0.3s ease-in-out;
+}
 
+.follow-me-icon a:hover{
+   filter: invert(1);
+}
+.follow-me-icon a{
+   color: inherit;
+   text-decoration : none;
+}
 

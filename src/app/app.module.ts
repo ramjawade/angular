@@ -24,6 +24,7 @@ import { AppComponent } from './app.component';
  */
 import { FourZeroFourComponent } from './four-zero-four/four-zero-four.component';
 import { MapComponent } from './map/map.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { MapComponent } from './map/map.component';
     HttpClientModule,
     LeafletModule.forRoot(),
     HighchartsChartModule,
-    PdfViewerModule
+    PdfViewerModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
