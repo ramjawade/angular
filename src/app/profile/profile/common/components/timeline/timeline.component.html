@@ -1,14 +1,11 @@
-<div class="timeline" fxLayout="column">
-        <div style="padding: 10px" fxLayout="column" fxLayoutAlign="space-between center">
-            <div class="timeline-header">My Road To Glory</div>
-            <div class="timeline-sub-header"> Below you can see a timeline of my education and some profetional achivements.</div>
-        </div>
+<div class="timeline p-10" fxLayout="column">
+        <h3>My Road To Glory</h3> <!-- Below you can see a timeline of my education and some profetional achivements. -->
         <mat-divider></mat-divider>
-        <div fxLayout.lg="column" fxLayout="row" fxLayoutAlign="center stretch" >
-            <div class="margin-10" fxLayout.lg="row" fxLayout="column" fxLayoutAlign="space-around stretch">
+        <div class="timeline-content" fxLayout.lg="column" fxLayout="row" fxLayoutAlign="center stretch" >
+            <div class="" fxLayout.lg="row" fxLayout="column" fxLayoutAlign="space-around stretch">
                 <app-timeline-layout [type]="'up'" [visible]="even" [item]="item" *ngFor="let item of timeLineList; let even = even; let odd = odd"></app-timeline-layout>
             </div>
-            <div class="middle-row margin-10" fxLayout.lg="row" fxLayout="column" fxLayoutAlign="space-around stretch">
+            <div class="middle-row m-10" fxLayout.lg="row" fxLayout="column" fxLayoutAlign="space-around stretch">
                 <div fxHide.lg="true" fxShow.sm="true" fxShow.xs="true" fxShow.md="true"  [style.height.px]="cardWith[i].clientHeight" xLayout.lg="column" fxLayout="row" fxLayoutAlign="center center" *ngFor="let item of timeLineList; let i = index">
                     <div class="dot" ></div>
                 </div>
@@ -16,7 +13,7 @@
                     <div class="dot" ></div>
                 </div>
             </div>
-            <div class="margin-10" fxLayout.lg="row" fxLayout="column" fxLayoutAlign="space-around stretch">
+            <div class="" fxLayout.lg="row" fxLayout="column" fxLayoutAlign="space-around stretch">
                 <app-timeline-layout [type]="'down'" [visible]="odd" [item]="item" *ngFor="let item of timeLineList; let even = even; let odd = odd"></app-timeline-layout>
             </div>
         </div> 

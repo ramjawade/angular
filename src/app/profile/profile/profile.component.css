@@ -6,6 +6,12 @@
    background-position: right;
    /* background-color: lightslategrey */
 }
+.about {
+   background-color: ghostwhite;
+}
+.about p {
+   font-size: 16px;
+}
 
 .quote-content div {
    font-size: 28px;
@@ -15,6 +21,7 @@
    background: #3496f3;
    padding: 20px;
 }
+
 .follow-me-icon i {
    border: 1px solid #000;
    display: flex;

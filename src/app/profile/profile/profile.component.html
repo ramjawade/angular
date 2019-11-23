@@ -1,15 +1,22 @@
 <div class="main-profile">
-    <div div fxLayout="column" fxLayoutAlign="stretch" fxLayoutGap="10px">
-        <div class="quote-content" fxLayout="column">
-            <div  fxFlex="45"></div>
+    <div fxLayout="column" fxLayoutAlign="stretch" fxLayoutGap="10px">
+        <div class="quote-content m-10" fxLayout="column" >
+            <div  fxFlex="60"></div>
             <div  fxLayout="row" >
-                    <div>Hi! I'm Dhondiram Jawade <br>
-                        A web developer, environmental lover & photographer love to explore new thing and places.
-                        Codding is my passion and I love JavaScript and related technology and framework. </div> 
+                    <div>Hi, I'm Dhondiram Jawade ..!!<br>
+                        A software developer, environmental lover & photographer. I love to explore new thing and places.
+                         </div> 
                     <div fxShow.lg="true" fxHide.sm="true" fxHide.xs="true" fxHide.md="true" fxFlex="20"></div>
             </div>
         </div>
-        <app-timeline></app-timeline>
+        <div class="about m-10 p-10" fxLayout="column" fxLayoutAlign="space-around stretch">
+            <h3>About Me</h3>
+            <mat-divider></mat-divider>
+            <p>
+                I am a web developer and would love to learn more about web technologies and related frameworks. Currently, I am working on Angular(8) and worked with JavaScript, jquery, angular.js projects.  I have special interest in map visualisation and used some map libraries like leaflet.js, D3.js, create.js, turf.js in projects. Also, I know some Js building tools like gulf.js, node.js, Bazel for angular and some of its plugin because, I believe that managing Js code very difficult than writing it for the large code base. 
+            </p>
+        </div>
+        <app-timeline class="m-10"></app-timeline>
         <div class="profile-footer" fxLayout="column" fxLayoutAlign="center center">
             <h3>Follow Me On</h3>
             <div  class="follow-me-icon"  fxLayout="row" fxLayoutAlign="space-around  center" fxLayoutGap="10px">
