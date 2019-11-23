@@ -1,42 +1,32 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="layout">
-    <mat-toolbar color="primary" class="example-header">
-        <button mat-icon-button (click)="sidenav.toggle()">
-          <mat-icon>menu</mat-icon>
-        </button>
-        <span class="example-fill-remaining-space"></span>
-        <i class="material-icons md-24" [matMenuTriggerFor]="menu">notification_important</i>
-        <button mat-icon-button [matMenuTriggerFor]="menu">
-          <mat-icon>more_vert</mat-icon>
-        </button>
-      </mat-toolbar>
-      <mat-menu #menu="matMenu">
-        <ng-template matMenuContent>
-          <button mat-menu-item>
-            <mat-icon>dialpad</mat-icon>
-            <span>ABC</span>
-          </button>
-          <button mat-menu-item>
-            <mat-icon>share</mat-icon>
-            <span>DEF</span>
-          </button>
-        </ng-template>
-      </mat-menu>
-      
-      <mat-sidenav-container class="example-container">
-        <mat-sidenav #sidenav mode="over" class="example-sidenav" [fixedInViewport]="options.value.fixed" [fixedTopGap]="options.value.top"
-          [fixedBottomGap]="options.value.bottom">
-          <mat-nav-list>
-            <mat-list-item routerLink="{{link.link}}" *ngFor="let link of links">
-              <i class="material-icons md-24 md-dark">{{link.icon}}</i>
-              <a  class="side-nav-text">{{ link.name }}</a>
-            </mat-list-item>
-          </mat-nav-list>
-        </mat-sidenav>
-      
-        <mat-sidenav-content [formGroup]="options">
-          <router-outlet></router-outlet>
-        </mat-sidenav-content>
-      </mat-sidenav-container>
+<div class="layout" fxFill layout="column">
+      <div class="toolbar">
+          <mat-toolbar >
+            <button mat-icon-button (click)="sidenav.toggle()">
+                <i class="fa fa-bars fa-lg"></i>
+            </button>
+            <span class="fill-remaining-space"></span>
+          </mat-toolbar>
+      </div>
+      <div fxFill class="lauout-content">
+          <mat-sidenav-container class="side-nav-container">
+            <!-- <div> -->
+                <mat-sidenav #sidenav mode="side" class="sidenav" [fixedInViewport]="options.value.fixed" [fixedTopGap]="options.value.top"
+                [fixedBottomGap]="options.value.bottom">
+                <mat-nav-list>
+                  <mat-list-item routerLink="{{link.link}}" *ngFor="let link of links">
+                    <i class="material-icons md-24 md-dark">{{link.icon}}</i>
+                    <a  class="side-nav-text">{{ link.name }}</a>
+                  </mat-list-item>
+                </mat-nav-list>
+              </mat-sidenav>
+              <mat-sidenav-content [formGroup]="options">
+                <div fxFlex>
+                    <router-outlet></router-outlet>
+                </div>
+              </mat-sidenav-content>
+            <!-- </div>  -->
+          </mat-sidenav-container>
+        </div>
 </div>
 
