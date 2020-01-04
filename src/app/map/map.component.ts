@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { icon, latLng, Map, marker, point, polyline, gridLayer, latLngBounds } from 'leaflet';
 import 'leaflet.gridlayer.googlemutant/Leaflet.GoogleMutant';
 
+declare const L;
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
@@ -18,7 +19,7 @@ export class MapComponent implements OnInit {
   }
 
   onMapReady(map: Map) {
-    gridLayer.googleMutant({
+    L.gridLayer.googleMutant({
       type: 'roadmap'	// valid values are 'roadmap', 'satellite', 'terrain' and 'hybrid'
     }).addTo(map);
     this.map = map;

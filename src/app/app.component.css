@@ -1,25 +1,17 @@
   .layout {
-    height: calc(100%-60px) !important;
+    height: 100%;
     width: 100%;
-    overflow: auto;
   }
 
- .fill-remaining-space {
-      flex: 1 1 auto;
-  }
-
-  .lauout-content {
-    /* position: absolute; */
-  }
-
-  .side-nav-container {
+  .main-container{
     background-color: #eee;
     position: absolute;
     top: 40px; 
     left: 0;
     right: 0;
+    bottom: 0;
   }
-  
+
   .sidenav {
     justify-content: center;
     width: 200px;
@@ -40,12 +32,12 @@
     background-color: inherit;
   }
 
-  .lauout-content {
-    
-  }
-    
   .side-nav-text {
     padding-left: 10px;
     color: #757575
+  }
+
+  .fill-remaining-space {
+    flex: 1 1 auto;
   }
   

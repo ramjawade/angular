@@ -1,4 +1,3 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div class="layout" fxFill layout="column">
       <div class="toolbar">
           <mat-toolbar >
@@ -8,9 +7,8 @@
             <span class="fill-remaining-space"></span>
           </mat-toolbar>
       </div>
-      <div fxFill class="lauout-content">
-          <mat-sidenav-container class="side-nav-container">
-            <!-- <div> -->
+      <div>
+          <mat-sidenav-container class="main-container">
                 <mat-sidenav #sidenav mode="side" class="sidenav" [fixedInViewport]="options.value.fixed" [fixedTopGap]="options.value.top"
                 [fixedBottomGap]="options.value.bottom">
                 <mat-nav-list>
@@ -25,7 +23,6 @@
                     <router-outlet></router-outlet>
                 </div>
               </mat-sidenav-content>
-            <!-- </div>  -->
           </mat-sidenav-container>
         </div>
 </div>
