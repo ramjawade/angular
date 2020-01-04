@@ -12,7 +12,7 @@
                 <mat-sidenav #sidenav mode="side" class="sidenav" [fixedInViewport]="options.value.fixed" [fixedTopGap]="options.value.top"
                 [fixedBottomGap]="options.value.bottom">
                 <mat-nav-list>
-                  <mat-list-item routerLink="{{link.link}}" *ngFor="let link of links">
+                  <mat-list-item (click)="menuClick(link.link)" (click)="sidenav.toggle()" *ngFor="let link of links">
                     <i class="material-icons md-24 md-dark">{{link.icon}}</i>
                     <a  class="side-nav-text">{{ link.name }}</a>
                   </mat-list-item>

@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import {FormBuilder, FormGroup} from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +8,13 @@ import {FormBuilder, FormGroup} from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   options: FormGroup;
 
-  constructor(fb: FormBuilder) {
+  constructor(
+    fb: FormBuilder,
+    private router: Router
+    ) {
     this.options = fb.group({
       bottom: 0,
       fixed: false,
@@ -60,4 +65,8 @@ export class AppComponent {
     //   icon : "call"
     // }
   ];
+
+  menuClick(link) {
+    this.router.navigateByUrl(link);
+  }
 }
