@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "pwa" : "http-server -p 8080 -c-1 docs/"
   },
   "private": true,
   "dependencies": {
@@ -22,7 +23,9 @@
     "@angular/material": "^8.1.1",
     "@angular/platform-browser": "^8.1.2",
     "@angular/platform-browser-dynamic": "^8.1.2",
+    "@angular/pwa": "^0.803.21",
     "@angular/router": "^8.1.2",
+    "@angular/service-worker": "^8.1.2",
     "@asymmetrik/ngx-leaflet": "^4.0.0",
     "ag-grid-angular": "^20.2.0",
     "ag-grid-community": "^20.2.0",
@@ -54,6 +57,7 @@
     "@types/leaflet.gridlayer.googlemutant": "^0.4.4",
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.1",
+    "http-server": "^0.12.0",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",

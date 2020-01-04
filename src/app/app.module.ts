@@ -24,6 +24,8 @@ import { AppComponent } from './app.component';
  */
 import { FourZeroFourComponent } from './four-zero-four/four-zero-four.component';
 import { MapComponent } from './map/map.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,8 @@ import { MapComponent } from './map/map.component';
     HttpClientModule,
     LeafletModule.forRoot(),
     HighchartsChartModule,
-    PdfViewerModule
+    PdfViewerModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
