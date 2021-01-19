@@ -25,7 +25,7 @@ export class TimelineComponent implements OnInit {
       discription : 'B.E (Information Technology).'
     }, {
       title : '16 Aug 2017 -  Present',
-      subtitle : 'Innoeye Technology Indore, MP.',
+      subtitle : 'ABC Technology Indore, MP.',
       discription : 'Software Developer.'
     }];
   }
