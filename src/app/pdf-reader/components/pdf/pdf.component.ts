@@ -12,7 +12,7 @@ export class PdfComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.pdfSrc = "assets/OSS_Interface_Req_v1.3.pdf"; 
+    this.pdfSrc = ""; 
 
   }
 
