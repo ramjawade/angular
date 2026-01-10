@@ -1,3 +1,147 @@
-Welcome To Demo App
+<div class="app-container">
+  <!-- Header Section -->
+  <header class="app-header">
+    <div class="container">
+      <h1 class="app-title">
+        <span class="icon">📅</span>
+        Timezone Date Picker
+      </h1>
+      <p class="app-subtitle">Select dates with timezone awareness</p>
+    </div>
+  </header>
 
-<app-advance-search></app-advance-search>
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      <!-- Demo Card -->
+      <div class="demo-card">
+        <div class="card-header">
+          <h2 class="card-title">Interactive Date Picker</h2>
+          <p class="card-description">
+            Select a timezone and pick a date to see it converted across different timezones.
+          </p>
+        </div>
+        
+        <div class="card-body">
+          <!-- Timezone Selector -->
+          <div class="timezone-selector-wrapper">
+            <label for="timezone-select" class="input-label">Select Timezone</label>
+            <select 
+              id="timezone-select" 
+              class="timezone-select form-control"
+              [(ngModel)]="selectedTimezone">
+              <option *ngFor="let tz of timezones" [value]="tz.timezone">
+                {{ tz.name }} ({{ tz.code }}) - {{ tz.offset }}
+              </option>
+            </select>
+          </div>
+
+          <!-- Date Picker -->
+          <div class="date-picker-wrapper">
+            <label for="timezone" class="input-label">Server Date & Time</label>
+            <lib-timezone-bs-datepicker 
+              [(ngModel)]="selectedDate"
+              [timezone]="selectedTimezone"
+              (bsValueChange)="onDateChange($event)"
+              placeholder="Select a date">
+            </lib-timezone-bs-datepicker>
+          </div>
+
+          <!-- Selected Date Display -->
+          <div class="selected-date-display" *ngIf="selectedDate">
+            <div class="display-header">
+              <h3>Selected Date in Local timezone</h3>
+            </div>
+            <div class="display-content">
+              <div class="date-value">
+                {{ selectedDate }}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <div class="info-section">
+            <div class="info-item">
+              <span class="info-icon">🌍</span>
+              <div class="info-content">
+                <h3>Timezone Support</h3>
+                <p>Automatically detects and converts timezones</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">⚡</span>
+              <div class="info-content">
+                <h3>Fast & Responsive</h3>
+                <p>Built with Angular for optimal performance</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">🎨</span>
+              <div class="info-content">
+                <h3>Customizable</h3>
+                <p>Easy to integrate and style</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timezone Table Section -->
+      <div class="timezone-table-card">
+        <div class="table-header">
+          <h3 class="table-title">🌍 {{ selectedDate ? 'Selected Date' : 'Current Time' }} Around the World</h3>
+          <p class="table-description">
+            {{ selectedDate ? 'See your selected date across different timezones' : 'Live view of current date and time across different timezones' }}
+          </p>
+        </div>
+        
+        <div class="table-responsive">
+          <table class="timezone-table">
+            <thead>
+              <tr>
+                <th>Location</th>
+                <th>IANA String</th>
+                <th>CODE</th>
+                <th>Offset</th>
+                <th>{{ selectedDate ? 'Selected' : 'Current' }} Date & Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let tz of timezones" class="timezone-row">
+                <td class="location-cell">
+                  <span class="city-name">{{ tz.name }}</span>
+                </td>
+                <td class="iana-cell">
+                  <span class="iana-text">{{ tz.timezone }}</span>
+                </td>
+                <td class="code-cell">
+                  <span class="code-badge">{{ tz.countryCode }}, {{ tz.code }}</span>
+                </td>
+                <td class="offset-cell">
+                  <span class="offset-badge">{{ tz.offset }}</span>
+                </td>
+                <td class="datetime-cell">
+                  {{ (selectedDate || currentDate) | timezone: tz.timezone : 'full' }}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Example Section -->
+      <!-- <div class="example-section">
+        <h3 class="section-title">Try Advanced Search</h3>
+        <app-advance-search></app-advance-search>
+      </div> -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <div class="container">
+      <p>&copy; 2026 ng-kit • Timezone Date Picker Component</p>
+    </div>
+  </footer>
+</div>

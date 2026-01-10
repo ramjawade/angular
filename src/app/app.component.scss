@@ -1,0 +1,569 @@
+// Modern color palette
+$primary-color: #6366f1;
+$primary-dark: #4f46e5;
+$secondary-color: #8b5cf6;
+$background-light: #f8fafc;
+$background-dark: #0f172a;
+$card-bg: #ffffff;
+$text-primary: #1e293b;
+$text-secondary: #64748b;
+$border-color: #e2e8f0;
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+// Reset and base styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: $text-primary;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  width: 100%;
+}
+
+// Header styles
+.app-header {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 2rem 0;
+  color: white;
+  
+  .app-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+    .icon {
+      font-size: 3rem;
+      animation: bounce 2s infinite;
+    }
+  }
+  
+  .app-subtitle {
+    font-size: 1.125rem;
+    opacity: 0.9;
+    font-weight: 300;
+    margin-left: 4rem;
+  }
+}
+
+// Main content
+.main-content {
+  flex: 1;
+  padding: 3rem 0;
+}
+
+// Demo card styles
+.demo-card {
+  background: $card-bg;
+  border-radius: 1rem;
+  box-shadow: $shadow-xl;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+  
+  .card-header {
+    background: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+    color: white;
+    padding: 2rem;
+    
+    .card-title {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    
+    .card-description {
+      font-size: 1rem;
+      opacity: 0.95;
+      line-height: 1.6;
+    }
+  }
+  
+  .card-body {
+    padding: 3rem 2rem;
+    
+    .timezone-selector-wrapper {
+      max-width: 500px;
+      margin: 0 auto 2rem;
+      
+      .input-label {
+        display: block;
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: $text-primary;
+        margin-bottom: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+      
+      .timezone-select {
+        width: 100%;
+        padding: 1rem 1.25rem;
+        font-size: 1rem;
+        border: 2px solid $border-color;
+        border-radius: 0.5rem;
+        transition: all 0.3s ease;
+        background: white;
+        cursor: pointer;
+        
+        &:focus {
+          outline: none;
+          border-color: $primary-color;
+          box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+        
+        &:hover {
+          border-color: $primary-dark;
+        }
+      }
+    }
+    
+    .date-picker-wrapper {
+      max-width: 500px;
+      margin: 0 auto 2rem;
+      
+      .input-label {
+        display: block;
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: $text-primary;
+        margin-bottom: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+      
+      // Style the datepicker input
+      ::ng-deep {
+        input[type="text"] {
+          width: 100%;
+          padding: 1rem 1.25rem;
+          font-size: 1rem;
+          border: 2px solid $border-color;
+          border-radius: 0.5rem;
+          transition: all 0.3s ease;
+          background: white;
+          
+          &:focus {
+            outline: none;
+            border-color: $primary-color;
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+          }
+          
+          &:hover {
+            border-color: $primary-dark;
+          }
+        }
+      }
+    }
+    
+    .selected-date-display {
+      max-width: 600px;
+      margin: 2rem auto 0;
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
+      border: 2px solid rgba(99, 102, 241, 0.2);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      
+      .display-header {
+        margin-bottom: 1rem;
+        
+        h3 {
+          font-size: 1rem;
+          font-weight: 600;
+          color: $text-secondary;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          margin: 0;
+        }
+      }
+      
+      .display-content {
+        .date-value {
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: $primary-color;
+          text-align: center;
+          padding: 1rem;
+          background: white;
+          border-radius: 0.5rem;
+          box-shadow: $shadow-sm;
+        }
+      }
+    }
+  }
+  
+  .card-footer {
+    background: $background-light;
+    padding: 2rem;
+    border-top: 1px solid $border-color;
+  }
+}
+
+// Info section
+.info-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  
+  .info-item {
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+    padding: 1rem;
+    background: white;
+    border-radius: 0.5rem;
+    transition: transform 0.2s ease;
+    
+    &:hover {
+      transform: translateX(4px);
+    }
+    
+    .info-icon {
+      font-size: 2rem;
+      flex-shrink: 0;
+    }
+    
+    .info-content {
+      h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        color: $text-primary;
+        margin-bottom: 0.25rem;
+      }
+      
+      p {
+        font-size: 0.875rem;
+        color: $text-secondary;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+// Timezone Table Section
+.timezone-table-card {
+  background: $card-bg;
+  border-radius: 1rem;
+  box-shadow: $shadow-xl;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+  
+  .table-header {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    padding: 1.5rem 2rem;
+    
+    .table-title {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    
+    .table-description {
+      font-size: 0.95rem;
+      opacity: 0.95;
+      margin: 0;
+    }
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+    padding: 0;
+  }
+  
+  .timezone-table {
+    width: 100%;
+    border-collapse: collapse;
+    
+    thead {
+      background: $background-light;
+      
+      th {
+        padding: 1rem 1.5rem;
+        text-align: left;
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: $text-primary;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        border-bottom: 2px solid $border-color;
+      }
+    }
+    
+    tbody {
+      .timezone-row {
+        border-bottom: 1px solid $border-color;
+        transition: background-color 0.2s ease;
+        
+        &:hover {
+          background-color: rgba(99, 102, 241, 0.05);
+        }
+        
+        &:last-child {
+          border-bottom: none;
+        }
+        
+        td {
+          padding: 1.25rem 1.5rem;
+          font-size: 0.95rem;
+        }
+        
+        .location-cell {
+          .city-name {
+            font-weight: 600;
+            color: $text-primary;
+          }
+        }
+        
+        .iana-cell {
+          .iana-text {
+            color: $text-secondary;
+            font-size: 0.875rem;
+            font-family: 'Consolas', 'Monaco', monospace;
+          }
+        }
+        
+        .code-cell {
+          .code-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            border-radius: 0.25rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            font-family: 'Consolas', 'Monaco', monospace;
+          }
+        }
+        
+        .offset-cell {
+          .offset-badge {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            background: #e0e7ff;
+            color: #4f46e5;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+          }
+        }
+        
+        .datetime-cell {
+          color: $text-primary;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+// Example section
+.example-section {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: $shadow-lg;
+  
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $text-primary;
+    margin-bottom: 1.5rem;
+  }
+}
+
+// Footer
+.app-footer {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: auto;
+  
+  p {
+    opacity: 0.9;
+    font-size: 0.875rem;
+  }
+}
+
+// Animations
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .app-header {
+    .app-title {
+      font-size: 1.875rem;
+      
+      .icon {
+        font-size: 2rem;
+      }
+    }
+    
+    .app-subtitle {
+      font-size: 1rem;
+      margin-left: 3rem;
+    }
+  }
+  
+  .demo-card {
+    .card-header {
+      padding: 1.5rem;
+      
+      .card-title {
+        font-size: 1.5rem;
+      }
+    }
+    
+    .card-body {
+      padding: 2rem 1.5rem;
+    }
+  }
+  
+  .info-section {
+    grid-template-columns: 1fr;
+  }
+  
+  .timezone-table-card {
+    .table-header {
+      padding: 1.25rem;
+      
+      .table-title {
+        font-size: 1.5rem;
+      }
+    }
+    
+    .timezone-table {
+      font-size: 0.875rem;
+      
+      thead th {
+        padding: 0.75rem 1rem;
+        font-size: 0.75rem;
+      }
+      
+      tbody td {
+        padding: 1rem;
+      }
+      
+      .time-badge {
+        font-size: 0.875rem;
+        padding: 0.4rem 0.8rem !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .app-header {
+    padding: 1.5rem 0;
+    
+    .app-title {
+      font-size: 1.5rem;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    
+    .app-subtitle {
+      margin-left: 0;
+      font-size: 0.875rem;
+    }
+  }
+  
+  .main-content {
+    padding: 2rem 0;
+  }
+  
+  .timezone-table-card {
+    .table-responsive {
+      .timezone-table {
+        display: block;
+        
+        thead {
+          display: none;
+        }
+        
+        tbody {
+          display: block;
+          
+          .timezone-row {
+            display: block;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background: $background-light;
+            border-radius: 0.5rem;
+            border: 1px solid $border-color;
+            
+            td {
+              display: block;
+              padding: 0.5rem 0;
+              border: none;
+              
+              &::before {
+                content: attr(data-label);
+                font-weight: 600;
+                display: block;
+                margin-bottom: 0.25rem;
+                color: $text-secondary;
+                font-size: 0.75rem;
+                text-transform: uppercase;
+              }
+            }
+            
+            .location-cell {
+              margin-bottom: 0.5rem;
+            }
+            
+            .time-badge {
+              width: 100%;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

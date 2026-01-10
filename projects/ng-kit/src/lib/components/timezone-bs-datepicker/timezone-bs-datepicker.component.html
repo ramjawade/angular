@@ -1,0 +1,12 @@
+<input 
+  name="date" 
+  id="timezone" 
+  class="form-control" 
+  [placeholder]="placeholder" 
+  bsDatepicker 
+  [bsConfig]="bsConfig"
+  [placement]="placement"
+  [minDate]="minDate"
+  [maxDate]="maxDate"
+  [(bsValue)]="internalDate"
+  (bsValueChange)="onChange($event)">
