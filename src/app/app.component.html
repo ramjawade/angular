@@ -13,6 +13,39 @@
   <!-- Main Content -->
   <main class="main-content">
     <div class="container">
+      
+      <!-- Info / Why Section -->
+      <div class="row justify-content-center mb-5">
+        <div class="col-12 col-lg-8">
+          <div class="info-card">
+            <h3 class="info-title">Why &#64;rjs/ng-kit?</h3>
+            <div class="info-grid">
+              <div class="info-item">
+                <span class="icon">🚫</span>
+                <div class="content">
+                  <strong>Bootstrap Datepicker doesn't support Timezones</strong>
+                  <p>Standard datepickers always assume the user's local browser time. They cannot natively handle "Input in Tokyo time" while you are in New York.</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <span class="icon">⏰</span>
+                <div class="content">
+                  <strong>JS Date Object limitation</strong>
+                  <p>Native JavaScript Dates are strictly bound to Local Time or UTC. They cannot store "Timezone" context, requiring complex offset math.</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <span class="icon">🔌</span>
+                <div class="content">
+                  <strong>Better IANA Support</strong>
+                  <p>Standard Angular pipes have limitations with raw IANA strings. Our custom <code>TimezonePipe</code> seamless accepts 'Asia/Tokyo' for display.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Demo Card -->
       <div class="demo-card">
         <div class="card-header">

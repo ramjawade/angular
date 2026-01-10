@@ -3,3 +3,4 @@
  */
 
 export * from './lib/components/timezone-bs-datepicker/index';
+export * from './lib/pipes/timezone.pipe';

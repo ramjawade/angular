@@ -11,7 +11,7 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "ram@ng-kit": [
+      "@rjs/ng-kit": [
         "projects/ng-kit/src/public-api"
       ]
     },

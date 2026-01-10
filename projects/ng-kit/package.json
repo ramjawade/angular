@@ -1,6 +1,21 @@
 {
-  "name": "ng-kit",
+  "name": "@rjs/ng-kit",
   "version": "0.0.1",
+  "description": "A specialized Angular UI kit featuring a timezone-aware Bootstrap Datepicker.",
+  "keywords": [
+    "angular",
+    "bootstrap",
+    "datepicker",
+    "timezone",
+    "date-time",
+    "ui-kit"
+  ],
+  "author": "Ram Jawade",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ramjawade/ng-kit"
+  },
   "peerDependencies": {
     "@angular/common": "^19.1.0",
     "@angular/core": "^19.1.0"

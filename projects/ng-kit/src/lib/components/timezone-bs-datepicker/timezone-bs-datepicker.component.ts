@@ -56,7 +56,6 @@ export class TimezoneBsDatepickerComponent implements ControlValueAccessor, OnCh
       // Timezone changed, recalculate internal date from external date
       if (this.externalDate) {
         this.internalDate = this.externalToInternal(this.externalDate);
-        this.onChange(this.internalDate);
       }
     }
   }
@@ -92,7 +91,8 @@ export class TimezoneBsDatepickerComponent implements ControlValueAccessor, OnCh
     const offsetMinutes = this.getTimezoneOffsetDifference(externalDate);
     
     // Adjust the date by the offset to show the correct time in the UI
-    const internalDate = new Date(externalDate.getTime() - offsetMinutes * 60000);
+    // correct logic: Local + (Target - Local) = Target
+    const internalDate = new Date(externalDate.getTime() + offsetMinutes * 60000);
     
     return internalDate;
   }
@@ -106,7 +106,7 @@ export class TimezoneBsDatepickerComponent implements ControlValueAccessor, OnCh
     const offsetMinutes = this.getTimezoneOffsetDifference(internalDate);
     
     // Reverse the adjustment
-    const externalDate = new Date(internalDate.getTime() + offsetMinutes * 60000);
+    const externalDate = new Date(internalDate.getTime() - offsetMinutes * 60000);
     
     return externalDate;
   }

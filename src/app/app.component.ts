@@ -1,8 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { TimezoneBsDatepickerComponent } from 'ram@ng-kit';
+import { TimezoneBsDatepickerComponent, TimezonePipe } from '@rjs/ng-kit';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { TimezonePipe } from './pipes/timezone.pipe';
 
 interface TimezoneInfo {
   name: string;
